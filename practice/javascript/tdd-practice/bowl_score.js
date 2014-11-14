@@ -1,5 +1,5 @@
-newGame = function () {
+var newGame = function () {
     return {
-        frames: Array(10)
+        frames: [{tries: Array(2)}].concat(Array(9))
     };
 }
