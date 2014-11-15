@@ -44,4 +44,9 @@ describe('distance', function () {
     it('exists', function () {
         expect(distance).toBeDefined();
     });
+    describe('given A and A', function () {
+        it('returns 0', function () {
+            expect(distance('A', 'A')).toEqual(0);
+        });
+    });
 });
