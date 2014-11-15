@@ -1,9 +1,10 @@
 var printDiamond = function (letter) {
-    var bRow = 'B' + spacePad(distance('A', 'B')) + 'B';
+    var cRow = 'C   C';
+    var bRow = 'B B';
     var aRow = 'A';
 
     if (letter === 'C') {
-        return spacePad(distance('A', letter)) + aRow + '\n ' + bRow + ' \nC   C\n ' + bRow + ' \n' + spacePad(distance('A', letter)) + aRow;
+        return spacePad(distance('A', letter)) + aRow + '\n' + spacePad(distance('B', letter)) + bRow + spacePad(distance('B', letter)) + '\n' + cRow + '\n' + spacePad(distance('B', letter)) + bRow + spacePad(distance('B', letter)) + '\n' + spacePad(distance('A', letter)) + aRow;
     }
 
     if (letter === 'B') {
