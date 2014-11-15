@@ -28,4 +28,9 @@ describe('spacePad', function () {
             expect(spacePad(0)).toEqual('');
         });
     });
+    describe('given 1', function () {
+        it('returns " "', function () {
+            expect(spacePad(1)).toEqual(' ');
+        });
+    });
 });
