@@ -33,4 +33,9 @@ describe('spacePad', function () {
             expect(spacePad(1)).toEqual(' ');
         });
     });
+    describe('given 2', function () {
+        it('returns "  "', function () {
+            expect(spacePad(2)).toEqual('  ');
+        });
+    });
 });
