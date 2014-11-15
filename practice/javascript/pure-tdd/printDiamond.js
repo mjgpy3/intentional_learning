@@ -1,12 +1,6 @@
 var printDiamond = function (letter) {
-    var innerSpace = function (letter) {
-        return spacePad(distance('A', letter)*2-1);
-    };
     var internal = function (letter) {
-        if (letter === 'A') {
-            return 'A';
-        }
-        return letter + innerSpace(letter) + letter;
+        return letter === 'A' ? 'A' : letter + spacePad(distance('A', letter)*2-1) + letter;
     };
     var row = function (to) {
         return spacePad(distance(to, letter)) +
