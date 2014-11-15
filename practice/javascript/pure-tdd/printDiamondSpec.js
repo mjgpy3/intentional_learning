@@ -12,4 +12,9 @@ describe('printDiamond', function () {
             expect(printDiamond('B')).toEqual(' A\nB B\n A');
         });
     });
+    describe('given the letter C', function () {
+        it('returns the A-B-C-B-A diamond', function () {
+            expect(printDiamond('C')).toEqual('  A\n B B \nC   C\n B B \n  A');
+        });
+    });
 });
