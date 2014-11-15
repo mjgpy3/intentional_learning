@@ -23,4 +23,9 @@ describe('spacePad', function () {
     it('exists', function () {
         expect(spacePad).toBeDefined();
     });
+    describe('given 0', function () {
+        it('returns the empty string', function () {
+            expect(spacePad(0)).toEqual('');
+        });
+    });
 });
