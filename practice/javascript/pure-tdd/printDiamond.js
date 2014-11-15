@@ -13,6 +13,9 @@ var printDiamond = function (letter) {
     return aRow;
 };
 
-var spacePad = function (_) {
+var spacePad = function (length) {
+    if (length === 1) {
+        return ' ';
+    }
     return '';
 };
