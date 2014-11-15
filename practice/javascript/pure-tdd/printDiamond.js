@@ -1,0 +1,1 @@
+var printDiamond = 42;
