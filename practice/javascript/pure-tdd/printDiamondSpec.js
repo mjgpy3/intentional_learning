@@ -9,17 +9,17 @@ describe('printDiamond', function () {
     });
     describe('given the letter B', function () {
         it('returns the A-B-A diamond', function () {
-            expect(printDiamond('B')).toEqual(' A\nB B\n A');
+            expect(printDiamond('B')).toEqual(' A \nB B\n A ');
         });
     });
     describe('given the letter C', function () {
         it('returns the A-B-C-B-A diamond', function () {
-            expect(printDiamond('C')).toEqual('  A\n B B \nC   C\n B B \n  A');
+            expect(printDiamond('C')).toEqual('  A  \n B B \nC   C\n B B \n  A  ');
         });
     });
     describe('given the letter D', function () {
         it('returns the A-B-C-D-C-B-A diamond', function () {
-            expect(printDiamond('D')).toEqual('   A\n  B B  \n C   C \nD     D\n C   C \n  B B  \n   A');
+            expect(printDiamond('D')).toEqual('   A   \n  B B  \n C   C \nD     D\n C   C \n  B B  \n   A   ');
         });
     });
 });

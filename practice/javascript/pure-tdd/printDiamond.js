@@ -3,36 +3,40 @@ var printDiamond = function (letter) {
         return spacePad(distance('A', letter)*2-1);
     };
     var internal = function (letter) {
+        if (letter === 'A') {
+            return 'A';
+        }
         return letter + innerSpace(letter) + letter;
     };
-
-    var row_0 = spacePad(distance('A', letter)) + 'A';
-    var row_1 = spacePad(distance('B', letter)) + internal('B') + spacePad(distance('B', letter));
-    var row_2 = spacePad(distance('C', letter)) + internal('C') + spacePad(distance('C', letter));
+    var row = function(to) {
+        return spacePad(distance(to, letter)) +
+            internal(to) +
+            spacePad(distance(to, letter));
+    };
 
     if (letter === 'D') {
-        return row_0 +
-            '\n' + row_1 +
-            '\n' + row_2 + '\n' +
+        return row('A') +
+            '\n' + row('B') +
+            '\n' + row('C') + '\n' +
             internal('D') +
-            '\n' + row_2 +
-            '\n' + row_1 + '\n' +
-            row_0;
+            '\n' + row('C') +
+            '\n' + row('B') + '\n' +
+            row('A');
     }
 
     if (letter === 'C') {
-        return row_0 +
-            '\n' + row_1 + '\n' +
+        return row('A') +
+            '\n' + row('B') + '\n' +
             internal('C') +
-            '\n' + row_1 + '\n' +
-            row_0;
+            '\n' + row('B') + '\n' +
+            row('A');
     }
 
     if (letter === 'B') {
-        return row_0 + '\n' + internal('B') + '\n' + row_0;
+        return row('A') + '\n' + internal('B') + '\n' + row('A');
     }
 
-    return row_0;
+    return row('A');
 };
 
 var spacePad = function (length) {
