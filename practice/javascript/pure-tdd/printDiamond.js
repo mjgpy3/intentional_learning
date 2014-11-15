@@ -13,4 +13,6 @@ var printDiamond = function (letter) {
     return aRow;
 };
 
-var spacePad = 42;
+var spacePad = function (_) {
+    return '';
+};
