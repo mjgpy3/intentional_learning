@@ -1,1 +1,3 @@
-var printDiamond = 42;
+var printDiamond = function (_) {
+    return 'A';
+};
