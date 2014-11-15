@@ -14,6 +14,10 @@ var printDiamond = function (letter) {
 };
 
 var spacePad = function (length) {
+    if (length === 2) {
+        return '  ';
+    }
+
     if (length === 1) {
         return ' ';
     }
