@@ -14,6 +14,7 @@ var printDiamond = function (letter) {
 };
 
 var spacePad = function (length) {
+    var result = '';
     if (length === 2) {
         return '  ';
     }
@@ -21,5 +22,5 @@ var spacePad = function (length) {
     if (length === 1) {
         return ' ';
     }
-    return '';
+    return result;
 };
