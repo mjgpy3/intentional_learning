@@ -19,7 +19,7 @@ describe('printDiamond', function () {
     });
     describe('given the letter D', function () {
         it('returns the A-B-C-D-C-B-A diamond', function () {
-            expect(printDiamond('D')).toEqual('   A\n  B B\n C   C\nD     D\n C   C\n  B B\n   A');
+            expect(printDiamond('D')).toEqual('   A\n  B B  \n C   C \nD     D\n C   C \n  B B  \n   A');
         });
     });
 });
