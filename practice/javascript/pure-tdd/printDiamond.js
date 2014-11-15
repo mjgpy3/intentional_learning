@@ -1,11 +1,14 @@
 var printDiamond = function (letter) {
+    var bRow = 'B B';
+    var aRow = 'A';
+
     if (letter === 'C') {
-        return '  A\n B B \nC   C\n B B \n  A';
+        return '  ' + aRow + '\n ' + bRow + ' \nC   C\n ' + bRow + ' \n  ' + aRow;
     }
 
     if (letter === 'B') {
-        return ' A\nB B\n A';
+        return ' ' + aRow + '\n' + bRow + '\n ' + aRow;
     }
 
-    return 'A';
+    return aRow;
 };
