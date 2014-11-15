@@ -3,15 +3,22 @@ var printDiamond = function (letter) {
     var bRow = 'B B';
     var aRow = 'A';
 
+    var row_0 = spacePad(distance('A', letter)) + aRow;
+    var row_1 = spacePad(distance('B', letter)) + bRow + spacePad(distance('B', letter));
+
     if (letter === 'C') {
-        return spacePad(distance('A', letter)) + aRow + '\n' + spacePad(distance('B', letter)) + bRow + spacePad(distance('B', letter)) + '\n' + cRow + '\n' + spacePad(distance('B', letter)) + bRow + spacePad(distance('B', letter)) + '\n' + spacePad(distance('A', letter)) + aRow;
+        return row_0 +
+            '\n' + row_1 + '\n' +
+            cRow +
+            '\n' + row_1 + '\n' +
+            row_0;
     }
 
     if (letter === 'B') {
-        return spacePad(distance('A', letter)) + aRow + '\n' + bRow + '\n' + spacePad(distance('A', letter)) + aRow;
+        return row_0 + '\n' + bRow + '\n' + row_0;
     }
 
-    return aRow;
+    return row_0;
 };
 
 var spacePad = function (length) {
