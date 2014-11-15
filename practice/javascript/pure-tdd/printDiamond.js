@@ -20,3 +20,5 @@ var spacePad = function (length) {
     }
     return result;
 };
+
+var distance = 42;
