@@ -8,35 +8,22 @@ var printDiamond = function (letter) {
         }
         return letter + innerSpace(letter) + letter;
     };
-    var row = function(to) {
+    var row = function (to) {
         return spacePad(distance(to, letter)) +
             internal(to) +
             spacePad(distance(to, letter));
     };
+    var rowsUntil = function () {
+        var alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+            i,
+            results = [];
+        for (var i = 0; distance(alpha[i], letter) > 0; i += 1) {
+            results.push(row(alpha[i]));
+        }
+        return results;
+    };
 
-    if (letter === 'D') {
-        return row('A') +
-            '\n' + row('B') +
-            '\n' + row('C') + '\n' +
-            internal('D') +
-            '\n' + row('C') +
-            '\n' + row('B') + '\n' +
-            row('A');
-    }
-
-    if (letter === 'C') {
-        return row('A') +
-            '\n' + row('B') + '\n' +
-            internal('C') +
-            '\n' + row('B') + '\n' +
-            row('A');
-    }
-
-    if (letter === 'B') {
-        return row('A') + '\n' + internal('B') + '\n' + row('A');
-    }
-
-    return row('A');
+    return rowsUntil().concat(internal(letter), rowsUntil().reverse()).join('\n');
 };
 
 var spacePad = function (length) {
