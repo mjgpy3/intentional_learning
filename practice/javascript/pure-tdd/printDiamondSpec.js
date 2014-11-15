@@ -49,4 +49,9 @@ describe('distance', function () {
             expect(distance('A', 'A')).toEqual(0);
         });
     });
+    describe('given A and B', function () {
+        it('returns 1', function () {
+            expect(distance('A', 'B')).toEqual(1);
+        });
+    });
 });
