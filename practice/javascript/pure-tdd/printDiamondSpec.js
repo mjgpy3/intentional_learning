@@ -39,3 +39,9 @@ describe('spacePad', function () {
         });
     });
 });
+
+describe('distance', function () {
+    it('exists', function () {
+        expect(distance).toBeDefined();
+    });
+});
