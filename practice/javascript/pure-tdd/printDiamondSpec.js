@@ -18,3 +18,9 @@ describe('printDiamond', function () {
         });
     });
 });
+
+describe('spacePad', function () {
+    it('exists', function () {
+        expect(spacePad).toBeDefined();
+    });
+});
