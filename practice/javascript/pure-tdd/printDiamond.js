@@ -21,4 +21,6 @@ var spacePad = function (length) {
     return result;
 };
 
-var distance = 42;
+var distance = function (_, __) {
+    return 0;
+};
