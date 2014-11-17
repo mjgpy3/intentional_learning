@@ -1,6 +1,10 @@
 (ns funky-spec.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+(def described-entity (ref nil))
+
+(defn it [_ v]
+  (assert (= (deref described-entity) v)))
+
+(defmacro describe [value nest]
+  `(dosync (ref-set described-entity ~value)
+           ~nest))
