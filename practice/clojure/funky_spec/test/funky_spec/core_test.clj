@@ -7,3 +7,9 @@
 
 (describe 99
   (it not= 42))
+
+(describe 0
+  (it-is zero?))
+
+(describe 99
+  (it-is-the (complement zero?)))

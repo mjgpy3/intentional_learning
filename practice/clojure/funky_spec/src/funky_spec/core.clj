@@ -2,8 +2,11 @@
 
 (def described-entity (ref nil))
 
-(defn it [fun v]
-  (assert (fun (deref described-entity) v)))
+(defn it [fun & v]
+  (assert (apply fun (cons (deref described-entity) v))))
+
+(def it-is it)
+(def it-is-the it)
 
 (defmacro describe [value nest]
   `(dosync (ref-set described-entity ~value)
