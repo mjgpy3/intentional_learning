@@ -4,3 +4,6 @@
 
 (describe 42
   (it = 42))
+
+(describe 99
+  (it not= 42))
