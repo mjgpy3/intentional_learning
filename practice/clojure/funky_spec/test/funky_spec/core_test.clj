@@ -13,3 +13,9 @@
 
 (describe 99
   (it-is-the (complement zero?)))
+
+(defn answer [] 42)
+
+(describe answer
+  (when-applied
+    (it = 42)))
