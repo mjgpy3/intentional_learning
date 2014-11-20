@@ -27,3 +27,7 @@
 (describe +
   (when-applied-to 42 35
     (it = 77)))
+
+(describe +
+  (when-applied-to 42 35 9 10
+    (it = 96)))
