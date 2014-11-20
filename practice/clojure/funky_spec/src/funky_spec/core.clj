@@ -16,6 +16,6 @@
   `(dosync (ref-set described-entity ((deref described-entity)))
            ~nest))
 
-(defmacro when-applied-to [p nest]
-  `(dosync (ref-set described-entity ((deref described-entity) ~p))
-           ~nest))
+(defmacro when-applied-to [& args-and-nest]
+  `(dosync (ref-set described-entity (apply (deref described-entity) (take (dec (count (quote ~args-and-nest))) (quote ~args-and-nest))))
+           (eval (last (quote ~args-and-nest)))))
