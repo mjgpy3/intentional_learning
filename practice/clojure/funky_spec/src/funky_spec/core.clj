@@ -15,3 +15,7 @@
 (defmacro when-applied [nest]
   `(dosync (ref-set described-entity ((deref described-entity)))
            ~nest))
+
+(defmacro when-applied-to [p nest]
+  `(dosync (ref-set described-entity ((deref described-entity) ~p))
+           ~nest))

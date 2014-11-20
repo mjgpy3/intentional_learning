@@ -19,3 +19,7 @@
 (describe answer
   (when-applied
     (it = 42)))
+
+(describe identity
+  (when-applied-to 99
+    (it = 99)))
