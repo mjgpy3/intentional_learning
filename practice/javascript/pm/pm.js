@@ -1,4 +1,4 @@
-var matching = function (_) {
+var matching = function (toMatch) {
     return {
         otherwise: function (resultCalculator) {
             return resultCalculator();
@@ -7,7 +7,10 @@ var matching = function (_) {
             value: function (exactMatch, resultCalculator) {
                 return {
                     match: function () {
-                        return resultCalculator();
+                        if (exactMatch === toMatch) {
+                            return resultCalculator();
+                        }
+                        throw new Error('Match ' + toMatch + ' not met');
                     }
                 };
             }
@@ -49,8 +52,8 @@ describe('matching(42).', function () {
             });
 
             describe('match()', function () {
-                xit('throws an error', function () {
-                    expect(described.match()).toThrow();
+                it('throws an error', function () {
+                    expect(described.match).toThrow();
                 });
             });
         });
