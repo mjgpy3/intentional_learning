@@ -1,5 +1,5 @@
 var matching = function (toMatch) {
-    var cases, obj;
+    var cases, obj, decorateWithMatchingValue;
 
     cases = [];
 
