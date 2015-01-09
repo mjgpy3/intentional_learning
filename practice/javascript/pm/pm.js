@@ -30,7 +30,7 @@ var matching = function (toMatch) {
                     if (matchingCase) {
                         return matchingCase.result();
                     }
-                    throw new Error('Match ' + toMatch + ' not met');
+                    throw new Error('Non-exhaustive patterns matching ' + toMatch);
                 };
 
                 return matcher;
