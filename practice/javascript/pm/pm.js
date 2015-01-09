@@ -22,20 +22,18 @@ var matching = function (toMatch) {
                     result: decorateWithMatchingValue(resultCalculator)
                 });
 
-                return {
-                    on: matcher.on,
-                    otherwise: matcher.otherwise,
-                    match: function () {
-                        matchingCase = cases.find(function (aCase) {
-                            return aCase.isMatch();
-                        });
+                matcher.match = function () {
+                    matchingCase = cases.find(function (aCase) {
+                        return aCase.isMatch();
+                    });
 
-                        if (matchingCase) {
-                            return matchingCase.result();
-                        }
-                        throw new Error('Match ' + toMatch + ' not met');
+                    if (matchingCase) {
+                        return matchingCase.result();
                     }
+                    throw new Error('Match ' + toMatch + ' not met');
                 };
+
+                return matcher;
             }
         }
     };
