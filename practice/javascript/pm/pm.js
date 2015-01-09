@@ -13,7 +13,9 @@ var matching = function (toMatch) {
                     isMatch: function () {
                         return toMatch === exactMatch;
                     },
-                    result: resultCalculator
+                    result: function () {
+                        return resultCalculator(toMatch);
+                    }
                 });
 
                 return {
@@ -88,6 +90,16 @@ describe('matching(42).', function () {
                 it('throws an error', function () {
                     expect(described.match).toThrow();
                 });
+            });
+        });
+
+        describe('value(42, function (x) { return x; }).match()', function () {
+            beforeEach(function () {
+                described = described.value(42, function (x) { return x; }).match();
+            });
+
+            it('is 42', function () {
+                expect(described).toBe(42);
             });
         });
 
