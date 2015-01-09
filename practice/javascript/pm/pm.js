@@ -104,7 +104,7 @@ describe('matching(42).', function () {
 
             describe('on.value(35, function () { return 10; }).match()', function () {
                 beforeEach(function () {
-                    described = described.on.value(35, function () { return 9; }).match();
+                    described = described.on.value(35, function () { return 10; }).match();
                 });
 
                 it('is 9', function () {
@@ -112,6 +112,15 @@ describe('matching(42).', function () {
                 });
             });
 
+            describe('on.value(42, function () { return 10; }).match()', function () {
+                beforeEach(function () {
+                    described = described.on.value(42, function () { return 10; }).match();
+                });
+
+                it('is 9', function () {
+                    expect(described).toBe(9);
+                });
+            });
         });
 
         describe('value(42, function () { return 7; }).', function () {
