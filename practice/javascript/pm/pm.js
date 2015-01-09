@@ -1,15 +1,31 @@
 var matching = function (toMatch) {
-    var obj = {
+    var cases, obj;
+
+    cases = [];
+
+    obj = {
         otherwise: function (resultCalculator) {
             return resultCalculator();
         },
         on: {
             value: function (exactMatch, resultCalculator) {
+                cases.push({
+                    isMatch: function () {
+                        return toMatch === exactMatch;
+                    },
+                    result: resultCalculator
+                });
+
                 return {
+                    on: obj.on,
                     otherwise: obj.otherwise,
                     match: function () {
-                        if (exactMatch === toMatch) {
-                            return resultCalculator();
+                        matchingCase = cases.find(function (aCase) {
+                            return aCase.isMatch();
+                        });
+
+                        if (matchingCase) {
+                            return matchingCase.result();
                         }
                         throw new Error('Match ' + toMatch + ' not met');
                     }
@@ -85,6 +101,17 @@ describe('matching(42).', function () {
                     expect(described.match()).toBe(9);
                 });
             });
+
+            describe('on.value(35, function () { return 10; }).match()', function () {
+                beforeEach(function () {
+                    described = described.on.value(35, function () { return 9; }).match();
+                });
+
+                it('is 9', function () {
+                    expect(described).toBe(9);
+                });
+            });
+
         });
 
         describe('value(42, function () { return 7; }).', function () {
