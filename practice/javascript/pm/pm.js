@@ -1,5 +1,5 @@
 var matching = function (toMatch) {
-    var cases, obj, decorateWithMatchingValue;
+    var cases, matcher, decorateWithMatchingValue;
 
     cases = [];
 
@@ -9,7 +9,7 @@ var matching = function (toMatch) {
         };
     };
 
-    obj = {
+    matcher = {
         otherwise: function (resultCalculator) {
             return decorateWithMatchingValue(resultCalculator)();
         },
@@ -23,8 +23,8 @@ var matching = function (toMatch) {
                 });
 
                 return {
-                    on: obj.on,
-                    otherwise: obj.otherwise,
+                    on: matcher.on,
+                    otherwise: matcher.otherwise,
                     match: function () {
                         matchingCase = cases.find(function (aCase) {
                             return aCase.isMatch();
@@ -40,7 +40,7 @@ var matching = function (toMatch) {
         }
     };
 
-    return obj;
+    return matcher;
 };
 
 describe('matching(42).', function () {
