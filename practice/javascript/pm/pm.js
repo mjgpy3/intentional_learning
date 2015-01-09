@@ -3,9 +3,15 @@ var matching = function (toMatch) {
 
     cases = [];
 
+    decorateWithMatchingValue = function (f) {
+        return function () {
+            return f(toMatch);
+        };
+    };
+
     obj = {
         otherwise: function (resultCalculator) {
-            return resultCalculator();
+            return decorateWithMatchingValue(resultCalculator)();
         },
         on: {
             value: function (exactMatch, resultCalculator) {
@@ -13,9 +19,7 @@ var matching = function (toMatch) {
                     isMatch: function () {
                         return toMatch === exactMatch;
                     },
-                    result: function () {
-                        return resultCalculator(toMatch);
-                    }
+                    result: decorateWithMatchingValue(resultCalculator)
                 });
 
                 return {
@@ -39,8 +43,6 @@ var matching = function (toMatch) {
     return obj;
 };
 
-var context = describe;
-
 describe('matching(42).', function () {
     var described;
 
@@ -51,6 +53,16 @@ describe('matching(42).', function () {
     describe('otherwise(', function () {
         beforeEach(function () {
             described = described.otherwise;
+        });
+
+        describe('function (x) { return x; })', function () {
+            beforeEach(function () {
+                described = described(function (x) { return x; });
+            });
+
+            it('is 42', function () {
+                expect(described).toBe(42);
+            });
         });
 
         [42, '"foobar"'].forEach(function (thing) {
