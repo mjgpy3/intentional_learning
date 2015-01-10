@@ -334,7 +334,7 @@ describe('some integration tests', function () {
     });
 
     describe('matching many types, none of which match, without an otherwise', function () {
-        it('works', function () {
+        it('throws an error', function () {
             expect(
                 matching(42).
                     on.value(99, anyFunction).
@@ -345,6 +345,12 @@ describe('some integration tests', function () {
                     match
             ).
                 toThrow();
+        });
+    });
+
+    describe('trying to match with no patterns, using the match call', function () {
+        it('throws an error', function () {
+            expect(matching(42).match).toThrow();
         });
     });
 });
