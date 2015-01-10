@@ -10,6 +10,16 @@ var matching = function (toMatch) {
     };
 
     matcher = {
+        match: function () {
+            matchingCase = cases.find(function (aCase) {
+                return aCase.isMatch();
+            });
+
+            if (matchingCase) {
+                return matchingCase.result();
+            }
+            throw new Error('Non-exhaustive patterns matching ' + toMatch);
+        },
         otherwise: function (resultCalculator) {
             return decorateWithMatchingValue(resultCalculator)();
         },
@@ -22,17 +32,6 @@ var matching = function (toMatch) {
                     result: resultCalculator
                 });
 
-                matcher.match = function () {
-                    matchingCase = cases.find(function (aCase) {
-                        return aCase.isMatch();
-                    });
-
-                    if (matchingCase) {
-                        return matchingCase.result();
-                    }
-                    throw new Error('Non-exhaustive patterns matching ' + toMatch);
-                };
-
                 return matcher;
             },
             value: function (exactMatch, resultCalculator) {
@@ -42,17 +41,6 @@ var matching = function (toMatch) {
                     },
                     result: decorateWithMatchingValue(resultCalculator)
                 });
-
-                matcher.match = function () {
-                    matchingCase = cases.find(function (aCase) {
-                        return aCase.isMatch();
-                    });
-
-                    if (matchingCase) {
-                        return matchingCase.result();
-                    }
-                    throw new Error('Non-exhaustive patterns matching ' + toMatch);
-                };
 
                 return matcher;
             }
