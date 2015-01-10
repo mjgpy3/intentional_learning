@@ -17,7 +17,7 @@ var matching = function (toMatch) {
     matchedResultOr = function (resultCalculator) {
         return function () {
             matchingCase = cases.find(function (aCase) {
-                return aCase.isMatch();
+                return aCase.isMatch(toMatch);
             });
 
             if (matchingCase) {
@@ -73,11 +73,7 @@ var matching = function (toMatch) {
                 return matcher;
             },
             satisfying: function (condition, resultCalculator) {
-                cases.push(buildCase(function () {
-                    return condition(toMatch);
-                },
-                    resultCalculator
-                ));
+                cases.push(buildCase(condition, resultCalculator));
 
                 return matcher;
             }
