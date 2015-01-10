@@ -49,6 +49,15 @@ var matching = function (toMatch) {
 
                 return matcher;
             },
+            objectWithProperties: function (prop, resultCalculator) {
+                cases.push(buildCase(function () {
+                    return typeof toMatch === 'object' && toMatch[prop] !== undefined;
+                },
+                    resultCalculator
+                ));
+
+                return matcher;
+            },
             value: function (exactMatch, resultCalculator) {
                 cases.push(buildCase(function () {
                     return toMatch === exactMatch;
@@ -96,23 +105,28 @@ describe('matching({ foo: "bar" }).', function () {
             });
         });
 
-        describe('objectWithProperty("foo", function () { return 7; }).match()', function () {
-            beforeEach(function () {
-                described = described.objectWithProperty('foo', function () { return 7; }).match();
+        [
+            'objectWithProperty',
+            'objectWithProperties'
+        ].forEach(function (matchCond) {
+            describe(matchCond + '("foo", function () { return 7; }).match()', function () {
+                beforeEach(function () {
+                    described = described[matchCond]('foo', function () { return 7; }).match();
+                });
+
+                it('is 7', function () {
+                    expect(described).toBe(7);
+                });
             });
 
-            it('is 7', function () {
-                expect(described).toBe(7);
-            });
-        });
+            describe(matchCond + '("spaz", function () { ... }).match()', function () {
+                beforeEach(function () {
+                    described = described[matchCond]('spaz', function () { return 7; }).match;
+                });
 
-        describe('objectWithProperty("spaz", function () { ... }).match()', function () {
-            beforeEach(function () {
-                described = described.objectWithProperty('spaz', function () { return 7; }).match;
-            });
-
-            it('throws an error', function () {
-                expect(described).toThrow();
+                it('throws an error', function () {
+                    expect(described).toThrow();
+                });
             });
         });
 
