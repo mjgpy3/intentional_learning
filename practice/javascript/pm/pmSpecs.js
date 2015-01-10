@@ -290,37 +290,37 @@ describe('some integration tests', function () {
     var metString = 'I am met',
         anyFunction = function () { throw new Error("shouldn't be hit"); },
         returnsIAmMet = function () { return metString; },
-        isBelow42 = function (x) { return x < 42; };
+        isBelow42 = function (x) { return x < 42; },
+        expectSuccessOf = function (expression) { expect(expression).toEqual(metString); },
+        expectNonExhaustiveErrorOf = function (f) { expect(f).toThrow(); };
 
     describe('matching value->value->value where 2nd matches', function () {
         it('works', function () {
-            expect(
+            expectSuccessOf(
                 matching(42).
                     on.value(99, anyFunction).
                     on.value(42, returnsIAmMet).
                     on.value(25, anyFunction).
                     match()
-            ).
-                toEqual(metString);
+            );
         });
     });
 
     describe('matching value->value->value where 1st matches', function () {
         it('works', function () {
-            expect(
+            expectSuccessOf(
                 matching(42).
                     on.value(42, returnsIAmMet).
                     on.value(99, anyFunction).
                     on.value(25, anyFunction).
                     match()
-            ).
-                toEqual(metString);
+            );
         });
     });
 
     describe('matching many types, none of which match, with an otherwise (i.e. the matching value)', function () {
         it('works', function () {
-            expect(
+            expectSuccessOf(
                 matching(42).
                     on.value(99, anyFunction).
                     on.object(anyFunction).
@@ -328,14 +328,13 @@ describe('some integration tests', function () {
                     on.objectWithProperty('feee', anyFunction).
                     on.satisfying(isBelow42, anyFunction).
                     otherwise(returnsIAmMet)
-            ).
-                toEqual(metString);
+            );
         });
     });
 
     describe('matching many types, none of which match, without an otherwise', function () {
         it('throws an error', function () {
-            expect(
+            expectNonExhaustiveErrorOf(
                 matching(42).
                     on.value(99, anyFunction).
                     on.object(anyFunction).
@@ -343,14 +342,13 @@ describe('some integration tests', function () {
                     on.objectWithProperty('feee', anyFunction).
                     on.satisfying(isBelow42, anyFunction).
                     match
-            ).
-                toThrow();
+            );
         });
     });
 
     describe('trying to match with no patterns, using the match call', function () {
         it('throws an error', function () {
-            expect(matching(42).match).toThrow();
+            expectNonExhaustiveErrorOf(matching(42).match);
         });
     });
 });
