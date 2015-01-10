@@ -50,10 +50,12 @@ var matching = function (toMatch) {
                 return matcher;
             },
             objectWithProperties: function (prop, resultCalculator) {
+                var args = [].slice.call(arguments);
+
                 cases.push(buildCase(function () {
                     return typeof toMatch === 'object' && toMatch[prop] !== undefined;
                 },
-                    resultCalculator
+                    args[args.length - 1]
                 ));
 
                 return matcher;
@@ -72,6 +74,65 @@ var matching = function (toMatch) {
 
     return matcher;
 };
+
+describe('matching({ foo: "bar", spam: "eggs"}).', function () {
+    var described;
+
+    beforeEach(function () {
+        described = matching({ foo: 'bar', spam: 'eggs' });
+    });
+
+    describe('on.', function () {
+        beforeEach(function () {
+            described = described.on;
+        });
+
+        describe('objectWithProperties("foo", "spam", function () { return 42; }).match()', function () {
+            beforeEach(function () {
+                described = described.objectWithProperties('foo', 'spam', function () { return 42; }).match();
+            });
+
+                it('is 42', function () {
+                    expect(described).toBe(42);
+                });
+        });
+
+        [
+            'objectWithProperty',
+            'objectWithProperties'
+        ].forEach(function (matchCond) {
+            describe(matchCond + '("foo", function () { return 7; }).match()', function () {
+                beforeEach(function () {
+                    described = described[matchCond]('foo', function () { return 7; }).match();
+                });
+
+                it('is 7', function () {
+                    expect(described).toBe(7);
+                });
+            });
+
+            describe(matchCond + '("foo", function (x) { return x; }).match()', function () {
+                beforeEach(function () {
+                    described = described[matchCond]('foo', function (x) { return x; }).match();
+                });
+
+                it('is "bar" at the foo property', function () {
+                    expect(described.foo).toBe("bar");
+                });
+            });
+
+            describe(matchCond + '("spaz", function () { ... }).match()', function () {
+                beforeEach(function () {
+                    described = described[matchCond]('spaz', function () { return 7; }).match;
+                });
+
+                it('throws an error', function () {
+                    expect(described).toThrow();
+                });
+            });
+        });
+    });
+});
 
 describe('matching({ foo: "bar" }).', function () {
     var described;
@@ -116,6 +177,16 @@ describe('matching({ foo: "bar" }).', function () {
 
                 it('is 7', function () {
                     expect(described).toBe(7);
+                });
+            });
+
+            describe(matchCond + '("foo", function (x) { return x; }).match()', function () {
+                beforeEach(function () {
+                    described = described[matchCond]('foo', function (x) { return x; }).match();
+                });
+
+                it('is "bar" at the foo property', function () {
+                    expect(described.foo).toBe("bar");
                 });
             });
 
