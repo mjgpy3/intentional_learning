@@ -29,7 +29,7 @@ var matching = function (toMatch) {
                     isMatch: function () {
                         return true;
                     },
-                    result: resultCalculator
+                    result: decorateWithMatchingValue(resultCalculator)
                 });
 
                 return matcher;
@@ -50,11 +50,11 @@ var matching = function (toMatch) {
     return matcher;
 };
 
-describe('matching({}).', function () {
+describe('matching({ foo: "bar" }).', function () {
     var described;
 
     beforeEach(function () {
-        described = matching({});
+        described = matching({ foo: 'bar' });
     });
 
     describe('on.', function () {
@@ -62,13 +62,23 @@ describe('matching({}).', function () {
             described = described.on;
         });
 
-        describe('object(function { return 99; }).match()', function () {
+        describe('object(function () { return 99; }).match()', function () {
             beforeEach(function () {
                 described = described.object(function () { return 99; }).match();
             });
 
             it('is 99', function () {
                 expect(described).toBe(99);
+            });
+        });
+
+        describe('object(function (x) { return x; }).match()', function () {
+            beforeEach(function () {
+                described = described.object(function (x) { return x; }).match();
+            });
+
+            it('has "bar" at its foo property', function () {
+                expect(described.foo).toBe('bar');
             });
         });
 
