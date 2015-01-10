@@ -35,6 +35,17 @@ var matching = function (toMatch) {
 
                 return matcher;
             },
+            objectWithProperty: function (prop, resultCalculator) {
+                cases.push({
+                    isMatch: function () {
+                        return typeof toMatch === 'object' && toMatch[prop] !== undefined;
+                    ;
+                    },
+                    result: decorateWithMatchingValue(resultCalculator)
+                });
+
+                return matcher;
+            },
             value: function (exactMatch, resultCalculator) {
                 cases.push({
                     isMatch: function () {
@@ -80,6 +91,26 @@ describe('matching({ foo: "bar" }).', function () {
 
             it('has "bar" at its foo property', function () {
                 expect(described.foo).toBe('bar');
+            });
+        });
+
+        describe('objectWithProperty("foo", function () { return 7; }).match()', function () {
+            beforeEach(function () {
+                described = described.objectWithProperty('foo', function () { return 7; }).match();
+            });
+
+            it('is 7', function () {
+                expect(described).toBe(7);
+            });
+        });
+
+        describe('objectWithProperty("spaz", function () { ... }).match()', function () {
+            beforeEach(function () {
+                described = described.objectWithProperty('spaz', function () { return 7; }).match;
+            });
+
+            it('throws an error', function () {
+                expect(described).toThrow();
             });
         });
 
