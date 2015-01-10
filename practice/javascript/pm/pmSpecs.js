@@ -285,3 +285,66 @@ describe('matching(42).', function () {
         });
     });
 });
+
+describe('some integration tests', function () {
+    var metString = 'I am met',
+        anyFunction = function () { throw new Error("shouldn't be hit"); },
+        returnsIAmMet = function () { return metString; },
+        isBelow42 = function (x) { return x < 42; };
+
+    describe('matching value->value->value where 2nd matches', function () {
+        it('works', function () {
+            expect(
+                matching(42).
+                    on.value(99, anyFunction).
+                    on.value(42, returnsIAmMet).
+                    on.value(25, anyFunction).
+                    match()
+            ).
+                toEqual(metString);
+        });
+    });
+
+    describe('matching value->value->value where 1st matches', function () {
+        it('works', function () {
+            expect(
+                matching(42).
+                    on.value(42, returnsIAmMet).
+                    on.value(99, anyFunction).
+                    on.value(25, anyFunction).
+                    match()
+            ).
+                toEqual(metString);
+        });
+    });
+
+    describe('matching many types, none of which match, with an otherwise (i.e. the matching value)', function () {
+        it('works', function () {
+            expect(
+                matching(42).
+                    on.value(99, anyFunction).
+                    on.object(anyFunction).
+                    on.objectWithProperties('blah', 'baz', anyFunction).
+                    on.objectWithProperty('feee', anyFunction).
+                    on.satisfying(isBelow42, anyFunction).
+                    otherwise(returnsIAmMet)
+            ).
+                toEqual(metString);
+        });
+    });
+
+    describe('matching many types, none of which match, without an otherwise', function () {
+        it('works', function () {
+            expect(
+                matching(42).
+                    on.value(99, anyFunction).
+                    on.object(anyFunction).
+                    on.objectWithProperties('blah', 'baz', anyFunction).
+                    on.objectWithProperty('feee', anyFunction).
+                    on.satisfying(isBelow42, anyFunction).
+                    match
+            ).
+                toThrow();
+        });
+    });
+});
