@@ -1,17 +1,19 @@
 var matching = function (toMatch) {
-    var cases, matcher, matchedResultOr, matchingObject;
+    var cases, matcher, matchedResultOr, isMatchingAnObject, addCaseAndGetMatcher;
 
     cases = [];
 
-    buildCase = function (matchChecker, resultCalculator) {
-        return {
-            isMatch: matchChecker,
-            result: resultCalculator
-        };
+    isMatchingAnObject = function () {
+        return typeof toMatch === 'object' && toMatch !== null;
     };
 
-    matchingObject = function () {
-        return typeof toMatch === 'object' && toMatch !== null;
+    addCaseAndGetMatcher = function (p, resultCalculator) {
+        cases.push({
+            isMatch: p,
+            result: resultCalculator
+        });
+
+        return matcher;
     };
 
     matchedResultOr = function (resultCalculator) {
@@ -30,53 +32,41 @@ var matching = function (toMatch) {
 
     matcher = {
         match: matchedResultOr(function () {
-            throw new Error('Non-exhaustive patterns matching ' + toMatch);
+            throw new Error('Non-exhaustive patterns when attempting to match ' + toMatch);
         }),
         otherwise: function (resultCalculator) {
             return matchedResultOr(resultCalculator)();
         },
         on: {
-            object: function (resultCalculator) {
-                cases.push(buildCase(matchingObject, resultCalculator));
-
-                return matcher;
-            },
             objectWithProperty: function (prop, resultCalculator) {
-                cases.push(buildCase(function () {
-                    return matchingObject() && toMatch[prop] !== undefined;
+                return addCaseAndGetMatcher(function () {
+                    return isMatchingAnObject() && toMatch[prop] !== undefined;
                 },
                     resultCalculator
-                ));
-
-                return matcher;
+                );
             },
             objectWithProperties: function (prop, resultCalculator) {
                 var args = [].slice.call(arguments);
 
-                cases.push(buildCase(function () {
-                    return matchingObject() && args.slice(0, -1).every(function (prop) {
+                return addCaseAndGetMatcher(function () {
+                    return isMatchingAnObject() && args.slice(0, -1).every(function (prop) {
                         return toMatch.hasOwnProperty(prop);
                     });
                 },
                     args[args.length - 1]
-                ));
-
-                return matcher;
+                );
             },
             value: function (exactMatch, resultCalculator) {
-                cases.push(buildCase(function () {
+                return addCaseAndGetMatcher(function () {
                     return toMatch === exactMatch;
                 },
                     resultCalculator
-                ));
-
-                return matcher;
+                );
             },
-            satisfying: function (condition, resultCalculator) {
-                cases.push(buildCase(condition, resultCalculator));
-
-                return matcher;
-            }
+            object: function (resultCalculator) {
+                return addCaseAndGetMatcher(isMatchingAnObject, resultCalculator);
+            },
+            satisfying: addCaseAndGetMatcher
         }
     };
 
