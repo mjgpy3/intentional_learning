@@ -1,5 +1,5 @@
 var matching = function (toMatch) {
-    var cases, matcher, decorateWithMatchingValue;
+    var cases, matcher, decorateWithMatchingValue, matchedResultOr;
 
     cases = [];
 
@@ -16,8 +16,8 @@ var matching = function (toMatch) {
         };
     };
 
-    matcher = {
-        match: function () {
+    matchedResultOr = function (resultCalculator) {
+        return function () {
             matchingCase = cases.find(function (aCase) {
                 return aCase.isMatch();
             });
@@ -25,10 +25,17 @@ var matching = function (toMatch) {
             if (matchingCase) {
                 return matchingCase.result();
             }
-            throw new Error('Non-exhaustive patterns matching ' + toMatch);
-        },
-        otherwise: function (resultCalculator) {
+
             return decorateWithMatchingValue(resultCalculator)();
+        };
+    };
+
+    matcher = {
+        match: matchedResultOr(function () {
+            throw new Error('Non-exhaustive patterns matching ' + toMatch);
+        }),
+        otherwise: function (resultCalculator) {
+            return matchedResultOr(resultCalculator)();
         },
         on: {
             object: function (resultCalculator) {
