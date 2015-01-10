@@ -9,6 +9,11 @@ var matching = function (toMatch) {
         };
     };
 
+    Case = function (matchChecker, resultCalculator) {
+        this.isMatch = matchChecker;
+        this.result = decorateWithMatchingValue(resultCalculator);
+    };
+
     matcher = {
         match: function () {
             matchingCase = cases.find(function (aCase) {
@@ -25,34 +30,29 @@ var matching = function (toMatch) {
         },
         on: {
             object: function (resultCalculator) {
-                cases.push({
-                    isMatch: function () {
-                        return typeof toMatch === 'object' && toMatch !== null;
-                    ;
-                    },
-                    result: decorateWithMatchingValue(resultCalculator)
-                });
+                cases.push(new Case(function () {
+                    return typeof toMatch === 'object' && toMatch !== null;
+                },
+                    resultCalculator
+                ));
 
                 return matcher;
             },
             objectWithProperty: function (prop, resultCalculator) {
-                cases.push({
-                    isMatch: function () {
-                        return typeof toMatch === 'object' && toMatch[prop] !== undefined;
-                    ;
-                    },
-                    result: decorateWithMatchingValue(resultCalculator)
-                });
+                cases.push(new Case(function () {
+                    return typeof toMatch === 'object' && toMatch[prop] !== undefined;
+                },
+                    resultCalculator
+                ));
 
                 return matcher;
             },
             value: function (exactMatch, resultCalculator) {
-                cases.push({
-                    isMatch: function () {
-                        return toMatch === exactMatch;
-                    },
-                    result: decorateWithMatchingValue(resultCalculator)
-                });
+                cases.push(new Case(function () {
+                    return toMatch === exactMatch;
+                },
+                    resultCalculator
+                ));
 
                 return matcher;
             }
