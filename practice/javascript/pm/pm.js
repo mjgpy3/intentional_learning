@@ -45,7 +45,7 @@ var matching = function (toMatch) {
                     resultCalculator
                 );
             },
-            objectWithProperties: function (prop, resultCalculator) {
+            objectWithProperties: function () {
                 var args = [].slice.call(arguments);
 
                 return addCaseAndGetMatcher(function () {
