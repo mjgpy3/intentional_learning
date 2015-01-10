@@ -1,19 +1,17 @@
 var matching = function (toMatch) {
-    var cases, matcher, decorateWithMatchingValue, matchedResultOr;
+    var cases, matcher, matchedResultOr, matchingObject;
 
     cases = [];
-
-    decorateWithMatchingValue = function (f) {
-        return function () {
-            return f(toMatch);
-        };
-    };
 
     buildCase = function (matchChecker, resultCalculator) {
         return {
             isMatch: matchChecker,
-            result: decorateWithMatchingValue(resultCalculator)
+            result: resultCalculator
         };
+    };
+
+    matchingObject = function () {
+        return typeof toMatch === 'object' && toMatch !== null;
     };
 
     matchedResultOr = function (resultCalculator) {
@@ -23,10 +21,10 @@ var matching = function (toMatch) {
             });
 
             if (matchingCase) {
-                return matchingCase.result();
+                return matchingCase.result(toMatch);
             }
 
-            return decorateWithMatchingValue(resultCalculator)();
+            return resultCalculator(toMatch);
         };
     };
 
@@ -39,17 +37,13 @@ var matching = function (toMatch) {
         },
         on: {
             object: function (resultCalculator) {
-                cases.push(buildCase(function () {
-                    return typeof toMatch === 'object' && toMatch !== null;
-                },
-                    resultCalculator
-                ));
+                cases.push(buildCase(matchingObject, resultCalculator));
 
                 return matcher;
             },
             objectWithProperty: function (prop, resultCalculator) {
                 cases.push(buildCase(function () {
-                    return typeof toMatch === 'object' && toMatch[prop] !== undefined;
+                    return matchingObject() && toMatch[prop] !== undefined;
                 },
                     resultCalculator
                 ));
@@ -60,7 +54,7 @@ var matching = function (toMatch) {
                 var args = [].slice.call(arguments);
 
                 cases.push(buildCase(function () {
-                    return typeof toMatch === 'object' && args.slice(0, -1).every(function (prop) {
+                    return matchingObject() && args.slice(0, -1).every(function (prop) {
                         return toMatch.hasOwnProperty(prop);
                     });
                 },
