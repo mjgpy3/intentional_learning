@@ -27,7 +27,8 @@ var matching = function (toMatch) {
             object: function (resultCalculator) {
                 cases.push({
                     isMatch: function () {
-                        return true;
+                        return typeof toMatch === 'object' && toMatch !== null;
+                    ;
                     },
                     result: decorateWithMatchingValue(resultCalculator)
                 });
@@ -207,6 +208,16 @@ describe('matching(42).', function () {
                 it('is 7', function () {
                     expect(described.match()).toBe(7);
                 });
+            });
+        });
+
+        describe('object(function () { ... }).match()', function () {
+            beforeEach(function () {
+                described = described.object(function () { }).match;
+            });
+
+            it('throws an error', function () {
+                expect(described).toThrow();
             });
         });
     });
