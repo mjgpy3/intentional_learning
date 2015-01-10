@@ -14,6 +14,27 @@ var matching = function (toMatch) {
             return decorateWithMatchingValue(resultCalculator)();
         },
         on: {
+            object: function (resultCalculator) {
+                cases.push({
+                    isMatch: function () {
+                        return true;
+                    },
+                    result: resultCalculator
+                });
+
+                matcher.match = function () {
+                    matchingCase = cases.find(function (aCase) {
+                        return aCase.isMatch();
+                    });
+
+                    if (matchingCase) {
+                        return matchingCase.result();
+                    }
+                    throw new Error('Non-exhaustive patterns matching ' + toMatch);
+                };
+
+                return matcher;
+            },
             value: function (exactMatch, resultCalculator) {
                 cases.push({
                     isMatch: function () {
@@ -51,6 +72,16 @@ describe('matching({}).', function () {
     describe('on.', function () {
         beforeEach(function () {
             described = described.on;
+        });
+
+        describe('object(function { return 99; }).match()', function () {
+            beforeEach(function () {
+                described = described.object(function () { return 99; }).match();
+            });
+
+            it('is 99', function () {
+                expect(described).toBe(99);
+            });
         });
 
         describe('value({}, function() { ... }).match()', function () {
