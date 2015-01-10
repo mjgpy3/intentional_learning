@@ -53,7 +53,9 @@ var matching = function (toMatch) {
                 var args = [].slice.call(arguments);
 
                 cases.push(buildCase(function () {
-                    return typeof toMatch === 'object' && toMatch[prop] !== undefined;
+                    return typeof toMatch === 'object' && args.slice(0, -1).every(function (prop) {
+                        return toMatch.hasOwnProperty(prop);
+                    });
                 },
                     args[args.length - 1]
                 ));
@@ -92,9 +94,19 @@ describe('matching({ foo: "bar", spam: "eggs"}).', function () {
                 described = described.objectWithProperties('foo', 'spam', function () { return 42; }).match();
             });
 
-                it('is 42', function () {
-                    expect(described).toBe(42);
-                });
+            it('is 42', function () {
+                expect(described).toBe(42);
+            });
+        });
+
+        describe('objectWithProperties("foo", "quux", function () {  }).match()', function () {
+            beforeEach(function () {
+                described = described.objectWithProperties('foo', 'quux', function () { }).match;
+            });
+
+            it('throws an error', function () {
+                expect(described).toThrow();
+            });
         });
 
         [
