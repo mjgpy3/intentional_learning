@@ -41,6 +41,30 @@ var matching = function (toMatch) {
     return matcher;
 };
 
+describe('matching({}).', function () {
+    var described;
+
+    beforeEach(function () {
+        described = matching({});
+    });
+
+    describe('on.', function () {
+        beforeEach(function () {
+            described = described.on;
+        });
+
+        describe('value({}, function() { ... }).match()', function () {
+            beforeEach(function () {
+                described = described.value({}, function () { }).match;
+            });
+
+            it('throws an error', function () {
+                expect(described).toThrow();
+            });
+        });
+    });
+});
+
 describe('matching(42).', function () {
     var described;
 
