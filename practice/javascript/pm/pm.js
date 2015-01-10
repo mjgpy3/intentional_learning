@@ -71,6 +71,15 @@ var matching = function (toMatch) {
                 ));
 
                 return matcher;
+            },
+            satisfying: function (condition, resultCalculator) {
+                cases.push(buildCase(function () {
+                    return condition(toMatch);
+                },
+                    resultCalculator
+                ));
+
+                return matcher;
             }
         }
     };
@@ -339,6 +348,18 @@ describe('matching(42).', function () {
                 it('is 7', function () {
                     expect(described.match()).toBe(7);
                 });
+            });
+        });
+
+        describe('satisfying(function (x) { return x > 41 && x < 43; }, function () { return "met"; }).match()', function () {
+            var isBetween41And43 = function (x) { return x > 41 && x < 43; };
+
+            beforeEach(function () {
+                described = described.satisfying(isBetween41And43, function () { return 'met'; }).match();
+            });
+
+            it('is "met"', function () {
+                expect(described).toBe("met");
             });
         });
 
