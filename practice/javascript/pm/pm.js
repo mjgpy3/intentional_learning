@@ -9,9 +9,11 @@ var matching = function (toMatch) {
         };
     };
 
-    Case = function (matchChecker, resultCalculator) {
-        this.isMatch = matchChecker;
-        this.result = decorateWithMatchingValue(resultCalculator);
+    buildCase = function (matchChecker, resultCalculator) {
+        return {
+            isMatch: matchChecker,
+            result: decorateWithMatchingValue(resultCalculator)
+        };
     };
 
     matcher = {
@@ -30,7 +32,7 @@ var matching = function (toMatch) {
         },
         on: {
             object: function (resultCalculator) {
-                cases.push(new Case(function () {
+                cases.push(buildCase(function () {
                     return typeof toMatch === 'object' && toMatch !== null;
                 },
                     resultCalculator
@@ -39,7 +41,7 @@ var matching = function (toMatch) {
                 return matcher;
             },
             objectWithProperty: function (prop, resultCalculator) {
-                cases.push(new Case(function () {
+                cases.push(buildCase(function () {
                     return typeof toMatch === 'object' && toMatch[prop] !== undefined;
                 },
                     resultCalculator
@@ -48,7 +50,7 @@ var matching = function (toMatch) {
                 return matcher;
             },
             value: function (exactMatch, resultCalculator) {
-                cases.push(new Case(function () {
+                cases.push(buildCase(function () {
                     return toMatch === exactMatch;
                 },
                     resultCalculator
