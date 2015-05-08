@@ -5,4 +5,40 @@
 {:title "Language Layers"
    :url "http://blog.cleancoder.com/uncle-bob/2015/04/27/LanguageLayers.html"
    :author "Uncle Bob"
-   :id "BLG2"}]
+   :id "BLG2"}
+{:title "The next “secret weapon” in programming"
+   :url "https://michaelochurch.wordpress.com/2010/10/29/the-next-secret-weapon-in-programming/"
+   :author "Michael O. Church"
+   :id "BLG3"}
+{:title "Can tech fix its broken culture?"
+   :url "https://michaelochurch.wordpress.com/2015/04/17/can-tech-fix-its-broken-culture/"
+   :author "Michael O. Church"
+   :id "BLG4"}
+{:title "The Failure of Agile"
+   :url "http://blog.toolshed.com/2015/05/the-failure-of-agile.html"
+   :author "Andy Hunt"
+   :id "BLG5"}
+{:title "What is Trolling?"
+   :url "http://blog.codinghorror.com/what-is-trolling/"
+   :author "Jeff Atwood"
+   :id "BLG6"}
+{:title "In Defense of the \"Smackdown\" Learning Model"
+   :url "http://blog.codinghorror.com/in-defense-of-the-smackdown-learning-model/"
+   :author "Jeff Atwood"
+   :id "BLG7"}
+{:title "IDE Culture vs. Unix philosophy"
+   :url "https://michaelochurch.wordpress.com/2013/01/09/ide-culture-vs-unix-philosophy/"
+   :author "Michael O. Church"
+   :id "BLG8"}
+{:title "Dear Slack"
+   :url "http://zedshaw.com/2015/02/02/dear-slack/"
+   :author "Zed Shaw"
+   :id "BLG9"}
+{:title "LXC containers are awesome, but Docker.io sucks"
+   :url "http://iops.io/blog/lxc-application-containers-docker-initial-thoughts/"
+   :author "Cal Leeming"
+   :id "BLG10"}
+{:title "How to Avoid Agility"
+   :url "http://blog.toolshed.com/2013/02/how-to-avoid-agility.html"
+   :author "Andy Hunt"
+   :id "BLG11"}]
