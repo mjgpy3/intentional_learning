@@ -57,4 +57,12 @@
 {:title "A blog engine written and proven in Coq"
    :url "http://coq-blog.clarus.me/a-blog-engine-written-and-proven-in-coq.html"
    :author "Guillaume Claret"
-   :id "BLG15"}]
+   :id "BLG15"}
+{:title "Docker vs Reality , 0 - 1"
+   :url "http://www.krisbuytaert.be/blog/docker-vs-reality-0-1"
+   :author "Kris Buytaert"
+   :id "BLG16"}
+{:title "The case against Docker"
+   :url "https://www.andreas-jung.com/contents/the-case-against-docker"
+   :author "Andreas Jung"
+   :id "BLG17"}]
