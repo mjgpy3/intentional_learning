@@ -41,4 +41,20 @@
 {:title "How to Avoid Agility"
    :url "http://blog.toolshed.com/2013/02/how-to-avoid-agility.html"
    :author "Andy Hunt"
-   :id "BLG11"}]
+   :id "BLG11"}
+{:title "Haskell on Heroku"
+   :url "http://brianmckenna.org/blog/haskell_on_heroku"
+   :author "Brian McKenna"
+   :id "BLG12"}
+{:title "Idris as a Library"
+   :url "http://brianmckenna.org/blog/idris_library"
+   :author "Brian McKenna"
+   :id "BLG13"}
+{:title "This Blog Uses Idris"
+   :url "http://brianmckenna.org/blog/idris_blog"
+   :author "Brian McKenna"
+   :id "BLG14"}
+{:title "A blog engine written and proven in Coq"
+   :url "http://coq-blog.clarus.me/a-blog-engine-written-and-proven-in-coq.html"
+   :author "Guillaume Claret"
+   :id "BLG15"}]
