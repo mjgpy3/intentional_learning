@@ -1,3 +1,6 @@
 [{:title "Clojure : Deep Walking Macros"
    :url "https://www.youtube.com/watch?v=HXfDK1OYpco"
-   :id "YT1"}]
+   :id "YT1"}
+{:title "Idris: Practical Dependent Types with Practical Examples"
+   :url "https://www.youtube.com/watch?v=4i7KrG1Afbk"
+   :id "YT2"}]
