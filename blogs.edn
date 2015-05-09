@@ -65,4 +65,12 @@
 {:title "The case against Docker"
    :url "https://www.andreas-jung.com/contents/the-case-against-docker"
    :author "Andreas Jung"
-   :id "BLG17"}]
+   :id "BLG17"}
+{:title "About Nix"
+   :url "http://nixos.org/nix/about.html"
+   :author "Nix Community"
+   :id "BLG18"}
+ {:title "About NixOS"
+   :url "http://nixos.org/nixos/about.html"
+   :author "Nix Community"
+   :id "BLG19"}]
