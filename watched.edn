@@ -3,4 +3,7 @@
    :id "YT1"}
 {:title "Idris: Practical Dependent Types with Practical Examples"
    :url "https://www.youtube.com/watch?v=4i7KrG1Afbk"
-   :id "YT2"}]
+   :id "YT2"}
+{:title "PureScript Compiler Dev Hangout"
+   :url "https://www.youtube.com/watch?v=Y3P1dxqwFiE"
+   :id "YT3"}]
