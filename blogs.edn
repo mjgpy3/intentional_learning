@@ -70,7 +70,35 @@
    :url "http://nixos.org/nix/about.html"
    :author "Nix Community"
    :id "BLG18"}
- {:title "About NixOS"
+{:title "About NixOS"
    :url "http://nixos.org/nixos/about.html"
    :author "Nix Community"
-   :id "BLG19"}]
+   :id "BLG19"}
+{:title "Why OCaml, why now?"
+   :url "https://spyder.wordpress.com/2014/03/16/why-ocaml-why-now/"
+   :author "Spyder"
+   :id "BLG20"}
+{:title "Careerism breeds mediocrity"
+   :url "https://michaelochurch.wordpress.com/2012/12/26/careerism-breeds-mediocrity/"
+   :author "Michael O. Church"
+   :id "BLG21"}
+{:title "The power of “I don’t know”"
+   :url "https://michaelochurch.wordpress.com/2012/12/03/the-power-of-i-dont-know/"
+   :author "Michael O. Church"
+   :id "BLG22"}
+{:title "What programmers want"
+   :url "https://michaelochurch.wordpress.com/2012/10/30/what-programmers-want/"
+   :author "Michael O. Church"
+   :id "BLG23"}
+{:title "Lets review.. Docker (again)"
+   :url "http://iops.io/blog/docker-hype/"
+   :author "Cal Leeming"
+   :id "BLG24"}
+{:title "Why Chef?"
+   :url "https://www.rallydev.com/blog/engineering/why-chef"
+   :author "Jonathan Chauncey"
+   :id "BLG25"}
+{:title "Belief, Respect, and Facts"
+   :url "http://loup-vaillant.fr/articles/beliefs-respect-and-facts"
+   :author "Loup Vaillant"
+   :id "BLG26"}]
