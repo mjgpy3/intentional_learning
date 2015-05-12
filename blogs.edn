@@ -121,4 +121,12 @@
 {:title "Just Say No to More End-to-End Tests"
    :url "http://googletesting.blogspot.co.uk/2015/04/just-say-no-to-more-end-to-end-tests.html"
    :author "Mike Wacker"
-   :id "BLG31"}]
+   :id "BLG31"}
+{:title "The sad state of sysadmin in the age of containers"
+   :url "http://www.vitavonni.de/blog/201503/2015031201-the-sad-state-of-sysadmin-in-the-age-of-containers.html"
+   :author "Erich Schubert"
+   :id "BLG32"}
+{:title "TDocker"
+   :url "http://grep.be/blog//en/computer/Docker/"
+   :author "Wouter"
+   :id "BLG32"}]
