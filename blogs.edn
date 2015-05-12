@@ -101,4 +101,24 @@
 {:title "Belief, Respect, and Facts"
    :url "http://loup-vaillant.fr/articles/beliefs-respect-and-facts"
    :author "Loup Vaillant"
-   :id "BLG26"}]
+   :id "BLG26"}
+{:title "Haskell/do notation"
+   :url "http://en.wikibooks.org/wiki/Haskell/do_notation"
+   :author "Haskell Community"
+   :id "BLG27"}
+{:title "Functors, Applicatives, And Monads In Pictures"
+   :url "http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html"
+   :author "Adit"
+   :id "BLG28"}
+{:title "Learn Nintendo DS a Haskell"
+   :url "http://brianmckenna.org/blog/learn_nintendo_ds_a_haskell"
+   :author "Brian McKenna"
+   :id "BLG29"}
+{:title "In which I make you hate Ruby in 7 minutes"
+   :url "http://devblog.avdi.org/2015/05/11/in-which-i-make-you-hate-ruby-in-7-minutes/"
+   :author "Avdi Grimm"
+   :id "BLG30"}
+{:title "Just Say No to More End-to-End Tests"
+   :url "http://googletesting.blogspot.co.uk/2015/04/just-say-no-to-more-end-to-end-tests.html"
+   :author "Mike Wacker"
+   :id "BLG31"}]
