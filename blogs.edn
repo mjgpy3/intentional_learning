@@ -141,4 +141,8 @@
 {:title "MicroservicePremium"
    :url "http://martinfowler.com/bliki/MicroservicePremium.html"
    :author "Martin Fowler"
-   :id "BLG35"}]
+   :id "BLG35"}
+{:title "Is Agile software development dead?"
+   :url "https://www.ibm.com/developerworks/community/blogs/BernieMichalik/entry/is_agile_software_development_dead?lang=en"
+   :author "Bernie Michalik"
+   :id "BLG36"}]
