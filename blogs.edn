@@ -137,4 +137,8 @@
 {:title "Agile Is Dead (Long Live Agility)"
    :url "http://pragdave.me/blog/2014/03/04/time-to-kill-agile/"
    :author "Dave Thomas"
-   :id "BLG34"}]
+   :id "BLG34"}
+{:title "MicroservicePremium"
+   :url "http://martinfowler.com/bliki/MicroservicePremium.html"
+   :author "Martin Fowler"
+   :id "BLG35"}]
