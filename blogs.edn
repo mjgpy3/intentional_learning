@@ -126,7 +126,11 @@
    :url "http://www.vitavonni.de/blog/201503/2015031201-the-sad-state-of-sysadmin-in-the-age-of-containers.html"
    :author "Erich Schubert"
    :id "BLG32"}
-{:title "TDocker"
+{:title "Docker"
    :url "http://grep.be/blog//en/computer/Docker/"
    :author "Wouter"
-   :id "BLG32"}]
+   :id "BLG32"}
+{:title "Why Don't You Trust Your Developers?"
+   :url "http://littlehart.net/atthekeyboard/2012/06/18/why-dont-you-trust-your-developers/"
+   :author "Chris Hartjes"
+   :id "BLG33"}]
