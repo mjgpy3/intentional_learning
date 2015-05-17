@@ -161,4 +161,8 @@
 {:title "Adaptable Design Up Front and the Open/Closed Principle"
    :url "http://effectivesoftwaredesign.com/2013/07/04/adaptable-design-up-front-and-the-openclosed-principle/"
    :author "Hayim Makabee"
-   :id "BLG40"}]
+   :id "BLG40"}
+{:title "Software Engineering: Dead?"
+   :url "http://blog.codinghorror.com/software-engineering-dead/"
+   :author "Jeff Atwood"
+   :id "BLG41"}]
