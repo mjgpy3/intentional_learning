@@ -145,4 +145,20 @@
 {:title "Is Agile software development dead?"
    :url "https://www.ibm.com/developerworks/community/blogs/BernieMichalik/entry/is_agile_software_development_dead?lang=en"
    :author "Bernie Michalik"
-   :id "BLG36"}]
+   :id "BLG36"}
+{:title "The Anti Agile Manifesto"
+   :url "http://antiagilemanifesto.com/"
+   :author "unknown"
+   :id "BLG37"}
+{:title "The End of Agile: Death by Over-Simplification"
+   :url "http://effectivesoftwaredesign.com/2014/03/17/the-end-of-agile-death-by-over-simplification/"
+   :author "Hayim Makabee"
+   :id "BLG38"}
+{:title "The Myth of Emergent Design and the Big Ball of Mud"
+   :url "http://effectivesoftwaredesign.com/2013/06/17/the-myth-of-emergent-design-and-the-big-ball-of-mud/"
+   :author "Hayim Makabee"
+   :id "BLG39"}
+{:title "Adaptable Design Up Front and the Open/Closed Principle"
+   :url "http://effectivesoftwaredesign.com/2013/07/04/adaptable-design-up-front-and-the-openclosed-principle/"
+   :author "Hayim Makabee"
+   :id "BLG40"}]
