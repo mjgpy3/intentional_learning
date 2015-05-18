@@ -6,4 +6,7 @@
    :id "YT2"}
 {:title "PureScript Compiler Dev Hangout"
    :url "https://www.youtube.com/watch?v=Y3P1dxqwFiE"
-   :id "YT3"}]
+   :id "YT3"}
+{:title "Code Blindness"
+   :url "https://www.youtube.com/watch?v=B31QrNFyRyc"
+   :id "YT4"}]
