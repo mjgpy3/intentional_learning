@@ -193,4 +193,12 @@
 {:title "The Hidden Trap of Code Coverage"
    :url "http://ariya.ofilabs.com/2012/09/the-hidden-trap-of-code-coverage.html"
    :author "Ariya Hidayat"
-   :id "BLG47"}]
+   :id "BLG47"}
+{:title "Agile Is Dead: The Angry Developer Version"
+   :url "http://rubiquity.com/2014/03/12/agile-is-dead-angry-developer.html"
+   :author "Richard Bishop"
+   :id "BLG48"}
+{:title "Reflections on the 10 Years Since the Agile Manifesto"
+   :url "http://www.mountaingoatsoftware.com/blog/reflections-on-the-10-years-since-the-agile-manifesto"
+   :author "Mike Cohn"
+   :id "BLG49"}]
