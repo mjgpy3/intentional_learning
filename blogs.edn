@@ -201,4 +201,8 @@
 {:title "Reflections on the 10 Years Since the Agile Manifesto"
    :url "http://www.mountaingoatsoftware.com/blog/reflections-on-the-10-years-since-the-agile-manifesto"
    :author "Mike Cohn"
-   :id "BLG49"}]
+   :id "BLG49"}
+{:title "The Thing of Software Development"
+   :url "http://michaelfeathers.typepad.com/michael_feathers_blog/2011/01/the-thing-of-software-development.html"
+   :author "Michael Feathers"
+   :id "BLG50"}]
