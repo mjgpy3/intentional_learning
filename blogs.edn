@@ -165,4 +165,32 @@
 {:title "Software Engineering: Dead?"
    :url "http://blog.codinghorror.com/software-engineering-dead/"
    :author "Jeff Atwood"
-   :id "BLG41"}]
+   :id "BLG41"}
+{:title "I Don't Want Agile Back"
+   :url "https://flowchainsensei.wordpress.com/2014/03/11/i-dont-want-agile-back/"
+   :author "Bob Marshall"
+   :id "BLG42"}
+{:title "I Don't Want Agile Back"
+   :url "https://flowchainsensei.wordpress.com/2014/03/11/i-dont-want-agile-back/"
+   :author "Bob Marshall"
+   :id "BLG42"}
+{:title "I Want Agile Back"
+   :url "http://agileotter.blogspot.com/2014/02/i-want-agile-back.html"
+   :author "Tim Ottinger"
+   :id "BLG43"}
+{:title "Scrum Managers: Are They The Worst?"
+   :url "http://agileotter.blogspot.com/2013/11/scrum-managers-are-they-worst.html"
+   :author "Tim Ottinger"
+   :id "BLG44"}
+{:title "3 Ways We Can Revive Agile"
+   :url "http://agileotter.blogspot.com/2014/02/bringing-back-agile.html"
+   :author "Tim Ottinger"
+   :id "BLG45"}
+{:title "Agile, Post-agile, Beyond Agile... Where do we go next?"
+   :url "http://agileotter.blogspot.com/2014/04/agile-post-agile-beyond-agile-where-do.html"
+   :author "Tim Ottinger"
+   :id "BLG46"}
+{:title "The Hidden Trap of Code Coverage"
+   :url "http://ariya.ofilabs.com/2012/09/the-hidden-trap-of-code-coverage.html"
+   :author "Ariya Hidayat"
+   :id "BLG47"}]
