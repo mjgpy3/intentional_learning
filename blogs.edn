@@ -205,4 +205,20 @@
 {:title "The Thing of Software Development"
    :url "http://michaelfeathers.typepad.com/michael_feathers_blog/2011/01/the-thing-of-software-development.html"
    :author "Michael Feathers"
-   :id "BLG50"}]
+   :id "BLG50"}
+{:title "Too Lazy to \"Type\""
+   :url "http://gnuu.org/2010/12/13/too-lazy-to-type/"
+   :author "Loren Segal"
+   :id "BLG51"}
+{:title "Death by risk-aversion"
+   :url "http://headrush.typepad.com/creating_passionate_users/2006/01/death_by_riskav.html"
+   :author "Kathy Sierra"
+   :id "BLG52"}
+{:title "A comparison of Haskell vs F#"
+   :url "http://fluffynukeit.com/a-comparison-of-haskell-vs-f/"
+   :author "Daniel Austin"
+   :id "BLG53"}
+{:title "You’re not a software craftsman if..."
+   :url "http://codeobsession.blogspot.com/2011/04/youre-not-software-craftsman-if.html"
+   :author "David Adsit"
+   :id "BLG54"}]
