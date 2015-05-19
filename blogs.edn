@@ -221,4 +221,8 @@
 {:title "You’re not a software craftsman if..."
    :url "http://codeobsession.blogspot.com/2011/04/youre-not-software-craftsman-if.html"
    :author "David Adsit"
-   :id "BLG54"}]
+   :id "BLG54"}
+{:title "Assignment Statement Considered Harmful"
+   :url "http://loup-vaillant.fr/articles/assignment"
+   :author "Loup Vaillant"
+   :id "BLG55"}]
