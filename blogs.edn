@@ -225,4 +225,8 @@
 {:title "Assignment Statement Considered Harmful"
    :url "http://loup-vaillant.fr/articles/assignment"
    :author "Loup Vaillant"
-   :id "BLG55"}]
+   :id "BLG55"}
+{:title "Erlang Is the Most Object Oriented Language"
+   :url "http://rylev.github.io/words/blog/2013/10/03/erlang-is-the-most-object-oriented-language/"
+   :author "Ryan Levick"
+   :id "BLG56"}]
