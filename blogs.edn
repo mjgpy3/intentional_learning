@@ -237,4 +237,40 @@
 {:title "Managing The Development Of Large Software Systems"
    :url "http://www.serena.com/docs/agile/papers/Managing-The-Development-of-Large-Software-Systems.pdf"
    :author "Dr. Winston W. Royce"
-   :id "BLG58"}]
+   :id "BLG58"}
+{:title "The Fallacy Of ReUse"
+   :url "http://www.udidahan.com/2009/06/07/the-fallacy-of-reuse/"
+   :author "Udi Dahan"
+   :id "BLG59"}
+{:title "Do software engineers need mathematics?"
+   :url "https://www.maa.org/external_archive/devlin/devlin_10_00.html"
+   :author "Keith Devlin"
+   :id "BLG60"}
+{:title "Listening to users considered harmful?"
+   :url "http://headrush.typepad.com/creating_passionate_users/2005/09/listening_to_us.html"
+   :author "Kathy Sierra"
+   :id "BLG61"}
+{:title "Gucumber is Cucumber for Go"
+   :url "http://gnuu.org/2015/03/30/gucumber-is-cucumber-for-go/"
+   :author "Loren Segal"
+   :id "BLG62"}
+{:title "Gucumber is Cucumber for Go"
+   :url "http://gnuu.org/2015/03/30/gucumber-is-cucumber-for-go/"
+   :author "Loren Segal"
+   :id "BLG63"}
+{:title "Alan Kays Definition Of Object Oriented"
+   :url "http://c2.com/cgi/wiki?AlanKaysDefinitionOfObjectOriented"
+   :author "Ward Cunningham"
+   :id "BLG64"}
+{:title "Ten Things We Know To Be True"
+   :url "http://www.google.com/about/company/philosophy/"
+   :author "Google Company"
+   :id "BLG65"}
+{:title "Clojure Libs and Namespaces: require, use, import, and ns"
+   :url "http://blog.8thlight.com/colin-jones/2010/12/05/clojure-libs-and-namespaces-require-use-import-and-ns.html"
+   :author "Colin Jones"
+   :id "BLG66"}
+{:title "Why Clojure?"
+   :url "http://thecleancoder.blogspot.com/2010/08/why-clojure.html"
+   :author "Uncle Bob"
+   :id "BLG67"}]
