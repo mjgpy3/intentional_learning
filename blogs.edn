@@ -229,4 +229,12 @@
 {:title "Erlang Is the Most Object Oriented Language"
    :url "http://rylev.github.io/words/blog/2013/10/03/erlang-is-the-most-object-oriented-language/"
    :author "Ryan Levick"
-   :id "BLG56"}]
+   :id "BLG56"}
+{:title "Why Elixir?"
+   :url "http://www.theerlangelist.com/2014/01/why-elixir.html"
+   :author "Saša Jurić"
+   :id "BLG57"}
+{:title "Managing The Development Of Large Software Systems"
+   :url "http://www.theerlangelist.com/2014/01/why-elixir.html"
+   :author "Dr. Winston W. Royce"
+   :id "BLG58"}]
