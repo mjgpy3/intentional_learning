@@ -286,3 +286,15 @@
    :url "http://www.moserware.com/2008/03/what-does-it-take-to-become-grandmaster.html"
    :author "Jeff Moser"
    :id "BLG70"}
+{:title "The Long, Dismal History of Software Project Failure"
+   :url "http://blog.codinghorror.com/the-long-dismal-history-of-software-project-failure/"
+   :author "Jeff Atwood"
+   :id "BLG71"}
+{:title "Success through Failure"
+   :url "http://blog.codinghorror.com/success-through-failure/"
+   :author "Jeff Atwood"
+   :id "BLG72"}
+{:title "BlueGreenDeployment"
+   :url "http://martinfowler.com/bliki/BlueGreenDeployment.html"
+   :author "Martin Fowler"
+   :id "BLG73"}]
