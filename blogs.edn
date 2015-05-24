@@ -297,4 +297,12 @@
 {:title "BlueGreenDeployment"
    :url "http://martinfowler.com/bliki/BlueGreenDeployment.html"
    :author "Martin Fowler"
-   :id "BLG73"}]
+   :id "BLG73"}
+{:title "My Take on Haskell vs Scala"
+   :url "http://jnordenberg.blogspot.com/2012/05/my-take-on-haskell-vs-scala.html"
+   :author "Jesper Nordenberg"
+   :id "BLG74"}
+{:title "Meditations on learning Haskell"
+   :url "http://bitemyapp.com/posts/2014-04-29-meditations-on-learning-haskell.html"
+   :author "Chris Allen"
+   :id "BLG75"}]
