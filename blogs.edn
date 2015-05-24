@@ -273,4 +273,16 @@
 {:title "Why Clojure?"
    :url "http://thecleancoder.blogspot.com/2010/08/why-clojure.html"
    :author "Uncle Bob"
-   :id "BLG67"}]
+   :id "BLG67"}
+{:title "NEVER Go Full-Functional: Haskell, Clojure, Scala"
+   :url "http://sapiengames.com/2014/02/15/never-go-full-functional-haskell-clojure-scala/"
+   :author "Nick Horton"
+   :id "BLG68"}
+{:title "Clojure's core.typed vs Haskell"
+   :url "http://adambard.com/blog/core-typed-vs-haskell/"
+   :author "Adam Bard"
+   :id "BLG69"}
+{:title "What Does It Take To Become A Grandmaster Developer?"
+   :url "http://www.moserware.com/2008/03/what-does-it-take-to-become-grandmaster.html"
+   :author "Jeff Moser"
+   :id "BLG70"}
