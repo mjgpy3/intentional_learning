@@ -15,4 +15,10 @@
    :id "YT5"}
 {:title "Professional Software Development"
    :url "https://www.youtube.com/watch?v=zwtg7lIMUaQ"
-   :id "YT6"}]
+   :id "YT6"}
+{:title "TOC 2011: Kathy Sierra, \"Creating Passionate Users\""
+   :url "https://www.youtube.com/watch?v=eSlRd6MnDv8"
+   :id "YT7"}
+{:title "Greg Young - The art of destroying software"
+   :url "https://vimeo.com/108441214"
+   :id "YT8"}]
