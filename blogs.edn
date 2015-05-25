@@ -333,4 +333,8 @@
 {:title "The Context Game"
    :url "http://goodenoughsoftware.net/2012/02/29/the-context-game/"
    :author "Greg Young"
-   :id "BLG82"}]
+   :id "BLG82"}
+{:title "JavaScript: The World's Most Misunderstood Programming Language"
+   :url "http://www.crockford.com/javascript/javascript.html"
+   :author "Douglas Crockford"
+   :id "BLG83"}]
