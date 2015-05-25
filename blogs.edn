@@ -337,4 +337,12 @@
 {:title "JavaScript: The World's Most Misunderstood Programming Language"
    :url "http://www.crockford.com/javascript/javascript.html"
    :author "Douglas Crockford"
-   :id "BLG83"}]
+   :id "BLG83"}
+{:title "Using shebang and lein-exec to write Clojure scripts that can use dependencies"
+   :url "http://bitemyapp.com/posts/2013-02-18-shebang-lein-exec-scripts-dependencies.html"
+   :author "Chris Allen"
+   :id "BLG84"}
+{:title "Language Flamewars and the Blub Paradox"
+   :url "http://www.lessonsoffailure.com/developers/language-flamewars-blub-paradox/"
+   :author "Dave Rodenbaugh"
+   :id "BLG85"}]
