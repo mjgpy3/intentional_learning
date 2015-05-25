@@ -21,4 +21,7 @@
    :id "YT7"}
 {:title "Greg Young - The art of destroying software"
    :url "https://vimeo.com/108441214"
-   :id "YT8"}]
+   :id "YT8"}
+{:title "The Death Of Agile"
+   :url "http://www.thoughtworks.com/talks/the-death-of-agile"
+   :id "YT9"}]
