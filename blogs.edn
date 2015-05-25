@@ -305,4 +305,32 @@
 {:title "Meditations on learning Haskell"
    :url "http://bitemyapp.com/posts/2014-04-29-meditations-on-learning-haskell.html"
    :author "Chris Allen"
-   :id "BLG75"}]
+   :id "BLG75"}
+{:title "A Stick Figure Guide to the Advanced Encryption Standard (AES)"
+   :url "http://www.moserware.com/2009/09/stick-figure-guide-to-advanced.html"
+   :author "Jeff Moser"
+   :id "BLG76"}
+{:title "Why Atom Can’t Replace Vim"
+   :url "https://medium.com/@mkozlows/why-atom-cant-replace-vim-433852f4b4d1"
+   :author "Mike Kozlowski"
+   :id "BLG77"}
+{:title "FAIL, can impress too"
+   :url "http://ayende.com/blog/165378/fail-can-impress-too"
+   :author "Ayende Rahien"
+   :id "BLG78"}
+{:title "Puppet Server drops Ruby for Clojure"
+   :url "http://www.infoworld.com/article/2687553/devops/puppet-server-drops-ruby-for-clojure.html"
+   :author "Serdar Yegulalp"
+   :id "BLG79"}
+{:title "Why are types useful?"
+   :url "http://bitemyapp.com/posts/2014-12-03-why-are-types-useful.html"
+   :author "Chris Allen"
+   :id "BLG80"}
+{:title "What ‘South Park’ can teach us about startups and Silicon Valley’s ‘bro’ culture"
+   :url "http://www.marketwatch.com/story/what-south-park-can-teach-us-about-startups-and-silicon-valleys-bro-culture-2014-10-01"
+   :author "Jennifer Booton"
+   :id "BLG81"}
+{:title "The Context Game"
+   :url "http://goodenoughsoftware.net/2012/02/29/the-context-game/"
+   :author "Greg Young"
+   :id "BLG82"}]
