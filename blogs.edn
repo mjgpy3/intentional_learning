@@ -345,4 +345,16 @@
 {:title "Language Flamewars and the Blub Paradox"
    :url "http://www.lessonsoffailure.com/developers/language-flamewars-blub-paradox/"
    :author "Dave Rodenbaugh"
-   :id "BLG85"}]
+   :id "BLG85"}
+{:title "My rant about Haskell"
+   :url "https://rwmj.wordpress.com/2012/12/29/my-rant-about-haskell/"
+   :author "Richard WM Jones"
+   :id "BLG86"}
+{:title "Study: Clojure, CoffeeScript and Haskell Are the Most Expressive General-purpose Languages"
+   :url "http://www.infoq.com/news/2013/03/Language-Expressiveness"
+   :author "Abel Avram"
+   :id "BLG87"}
+{:title "ANALYSIS OF THE STATE OF CLOJURE AND CLOJURESCRIPT SURVEY 2014"
+   :url "http://blog.cognitect.com/blog/2014/10/24/analysis-of-the-state-of-clojure-and-clojurescript-survey-2014"
+   :author "Justin Gehtland"
+   :id "BLG88"}]
