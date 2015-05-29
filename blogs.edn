@@ -441,4 +441,12 @@
 {:title "The Unofficial Guide to Rich Hickey's Brain"
    :url "http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/"
    :author "Daniel Higginbotham"
-   :id "BLG109"}]
+   :id "BLG109"}
+{:title "Why CoffeeScript Isn't the Answer"
+   :url "http://www.walkercoderanger.com/blog/2014/03/coffeescript-isnt-the-answer/"
+   :author "Jeff Walker"
+   :id "BLG110"}
+{:title "PROGRAMMING IS NOT A CRAFT"
+   :url "http://dannorth.net/2011/01/11/programming-is-not-a-craft/"
+   :author "Dan North"
+   :id "BLG111"}]
