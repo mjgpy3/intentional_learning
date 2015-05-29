@@ -414,29 +414,31 @@
    :url "http://blog.cognitect.com/blog/2015/3/27/distinguished-magic"
    :author "Marc Phillip"
    :id "BLG102"}
-{:title ""
-   :url ""
-   :author ""
-   :id "BLG102"}
-{:title ""
-   :url ""
-   :author ""
-   :id "BLG102"}
-{:title ""
-   :url ""
-   :author ""
-   :id "BLG102"}
-{:title ""
-   :url ""
-   :author ""
-   :id "BLG102"}
-{:title ""
-   :url ""
-   :author ""{:title ""
-   :url ""
-   {:title ""
-   :url ""
-   :author ""
-   :id "BLG102"}
-   :id "BLG102"}
-]
+{:title "Why we’re supporting Typed Clojure, and you should too!"
+   :url "http://blog.circleci.com/supporting-typed-clojure/"
+   :author "CircleCI"
+   :id "BLG103"}
+{:title "Level 5 means never having to say you're sorry"
+   :url "http://blog.codinghorror.com/level-5-means-never-having-to-say-youre-sorry/"
+   :author "Jeff Atwood"
+   :id "BLG104"}
+{:title "Boy Scout Check-ins"
+   :url "http://www.moserware.com/2008/10/boy-scout-check-ins.html"
+   :author "Jeff Moser"
+   :id "BLG105"}
+{:title "Yagni"
+   :url "http://martinfowler.com/bliki/Yagni.html"
+   :author "Martin Fowler"
+   :id "BLG106"}
+{:title "The Rule of Least Power"
+   :url "http://www.w3.org/2001/tag/doc/leastPower.html"
+   :author "W3C"
+   :id "BLG107"}
+{:title "EXTREMELY HONEST PROGRAMMING"
+   :url "http://blog.cognitect.com/blog/2014/8/25/extremely-honest-programming"
+   :author "Marc Phillips"
+   :id "BLG108"}
+{:title "The Unofficial Guide to Rich Hickey's Brain"
+   :url "http://www.flyingmachinestudios.com/programming/the-unofficial-guide-to-rich-hickeys-brain/"
+   :author "Daniel Higginbotham"
+   :id "BLG109"}]
