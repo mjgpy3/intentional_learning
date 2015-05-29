@@ -397,4 +397,20 @@
 {:title "What happens if you write a TCP stack in Python?"
    :url "http://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/"
    :author "Julia Evans"
-   :id "BLG98"}]
+   :id "BLG98"}
+{:title "STORY POINTS MUST DIE: A SPACETIME ADVENTURE"
+   :url "http://blog.cognitect.com/blog/2014/12/9/story-points-must-die-a-spacetime-adventure"
+   :author "Marc Phillips"
+   :id "BLG99"}
+{:title "Laws of Software Development"
+   :url "http://www.globalnerdy.com/2007/07/18/laws-of-software-development/"
+   :author "Joey Devilla"
+   :id "BLG100"}
+{:title "BREEZE EHR SIMPLIFIES HEALTHCARE WITH CLOJURE AND DATOMIC"
+   :url "http://blog.cognitect.com/blog/2015/5/14/breeze-ehr-to-simplify-healthcare-with-clojure-and-datomic"
+   :author "Marc Phillip"
+   :id "BLG101"}
+{:title "DISTINGUISHED MAGIC"
+   :url "http://blog.cognitect.com/blog/2015/3/27/distinguished-magic"
+   :author "Marc Phillip"
+   :id "BLG102"}]
