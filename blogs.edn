@@ -357,4 +357,44 @@
 {:title "ANALYSIS OF THE STATE OF CLOJURE AND CLOJURESCRIPT SURVEY 2014"
    :url "http://blog.cognitect.com/blog/2014/10/24/analysis-of-the-state-of-clojure-and-clojurescript-survey-2014"
    :author "Justin Gehtland"
-   :id "BLG88"}]
+   :id "BLG88"}
+{:title "Event sourcing revisited"
+   :url "https://lostechies.com/gabrielschenker/2015/05/26/event-sourcing-revisited/"
+   :author "Gabriel Schenker"
+   :id "BLG89"}
+{:title "RALLY AND DATOMIC"
+   :url "http://blog.cognitect.com/blog/2014/6/11/rally-and-datomic"
+   :author "Justin Gehtland"
+   :id "BLG90"}
+{:title "CULTURE IS DEFINED BY WHAT YOU CANNOT SAY"
+   :url "http://blog.cognitect.com/blog/2014/6/3/culture-is-defined-by-what-you-cannot-say"
+   :author "Michael Nygard"
+   :id "BLG91"}
+{:title "The problematic culture of \"Worse is Better\""
+   :url "http://pchiusano.github.io/2014-10-13/worseisworse.html"
+   :author "Paul Chiusano"
+   :id "BLG92"}
+{:title "Over 30% of Official Images in Docker Hub Contain High Priority Security Vulnerabilities"
+   :url "http://www.banyanops.com/blog/analyzing-docker-hub/"
+   :authors ["Jayanth Gummaraju" "Tarun Desikan" "Yoshio Turner"]
+   :id "BLG93"}
+{:title "The First Micro-service Architecture"
+   :url "http://blog.cleancoder.com/uncle-bob/2015/05/28/TheFirstMicroserviceArchitecture.html"
+   :author "Uncle Bob"
+   :id "BLG94"}
+{:title "It's an Experiment"
+   :url "http://blog.toolshed.com/2015/05/its-an-experiment.html"
+   :author "Andy Hunt"
+   :id "BLG95"}
+{:title "The second operating system hiding in every mobile phone"
+   :url "http://www.osnews.com/story/27416/The_second_operating_system_hiding_in_every_mobile_phone"
+   :author "Thom Holwerda"
+   :id "BLG96"}
+{:title "Totally stressed out? Sync to Paper"
+   :url "http://www.hanselman.com/blog/TotallyStressedOutSyncToPaper.aspx"
+   :author "Scott Hanselman"
+   :id "BLG97"}
+{:title "What happens if you write a TCP stack in Python?"
+   :url "http://jvns.ca/blog/2014/08/12/what-happens-if-you-write-a-tcp-stack-in-python/"
+   :author "Julia Evans"
+   :id "BLG98"}]
