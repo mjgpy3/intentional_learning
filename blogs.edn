@@ -449,4 +449,24 @@
 {:title "PROGRAMMING IS NOT A CRAFT"
    :url "http://dannorth.net/2011/01/11/programming-is-not-a-craft/"
    :author "Dan North"
-   :id "BLG111"}]
+   :id "BLG111"}
+{:title "Ten reasons not to use a statically typed functional programming language"
+   :url "http://fsharpforfunandprofit.com/posts/ten-reasons-not-to-use-a-functional-programming-language/"
+   :author "Scott Wlaschin"
+   :id "BLG112"}
+{:title "FADDISM"
+   :url "https://mikkosaarela.wordpress.com/tag/faddism/"
+   :author "Mikko Saarela"
+   :id "BLG113"}
+{:title "Why Polyglot Programming is a Fad"
+   :url "https://onsaasproducts.wordpress.com/2012/09/28/why-polyglot-programming-is-a-fad/"
+   :author "Eilon Reshef"
+   :id "BLG114"}
+{:title "THIS LANGUAGE IS LIKELY TO BE A PASSING FAD"
+   :url "http://hammerprinciple.com/therighttool/statements/this-language-is-likely-to-be-a-passing-fad"
+   :author "HAMMER"
+   :id "BLG115"}
+{:title "A RESPONSE TO “TEN REASONS TO NOT USE A FUNCTIONAL PROGRAMMING LANGUAGE”"
+   :url "http://onoffswitch.net/response-ten-reasons-functional-programming-language/"
+   :author "Anton Kropp"
+   :id "BLG116"}]
