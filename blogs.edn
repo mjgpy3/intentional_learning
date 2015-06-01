@@ -469,4 +469,28 @@
 {:title "A RESPONSE TO “TEN REASONS TO NOT USE A FUNCTIONAL PROGRAMMING LANGUAGE”"
    :url "http://onoffswitch.net/response-ten-reasons-functional-programming-language/"
    :author "Anton Kropp"
-   :id "BLG116"}]
+   :id "BLG116"}
+{:title "Code Coverage"
+   :url "http://goodenoughsoftware.net/2012/03/21/code-coverage/"
+   :author "Greg Young"
+   :id "BLG117"}
+{:title "Code Coverage [2]"
+   :url "http://goodenoughsoftware.net/2012/03/22/code-coverage-2/"
+   :author "Greg Young"
+   :id "BLG118"}
+{:title "Charge for bad code?"
+   :url "http://goodenoughsoftware.net/2012/03/27/charge-for-bad-code/"
+   :author "Greg Young"
+   :id "BLG119"}
+{:title "Functional programming is a ghetto"
+   :url "https://michaelochurch.wordpress.com/2012/04/24/functional-programming-is-a-ghetto/"
+   :author "Michael O Church"
+   :id "BLG121"}
+{:title "A problem with the term, programming “language”"
+   :url "https://michaelochurch.wordpress.com/2012/01/15/the-problem-with-programming-language/"
+   :author "Michael O Church"
+   :id "BLG122"}
+{:title "Your Tools Control You"
+   :url "http://goodenoughsoftware.net/2015/01/14/your-tools-control-you/"
+   :author "Greg Young"
+   :id "BLG123"}]
