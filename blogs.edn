@@ -493,4 +493,36 @@
 {:title "Your Tools Control You"
    :url "http://goodenoughsoftware.net/2015/01/14/your-tools-control-you/"
    :author "Greg Young"
-   :id "BLG123"}]
+   :id "BLG123"}
+{:title "An array of functions."
+   :url "http://blog.n01se.net/blog-n01se-net-p-27.html"
+   :author "Chris Houser"
+   :id "BLG124"}
+{:title "Six reasons your Big Data Hadoop project will fail in 2014"
+   :url "http://service-architecture.blogspot.com/2014/01/six-reasons-your-big-data-hadoop.html"
+   :author "Steve Jones"
+   :id "BLG125"}
+{:title "Don't use Hadoop - your data isn't that big"
+   :url "https://www.chrisstucchio.com/blog/2013/hadoop_hatred.html"
+   :author "Chris Stucchio"
+   :id "BLG126"}
+{:title "How Spotify built one of the best engineering cultures"
+   :url "https://highfive.com/blog/how-spotify-built-one-of-the-best-engineering-cultures"
+   :author "Michael Thomas"
+   :id "BLG127"}
+{:title "Please stop saying Java sucks"
+   :url "http://blog.smartbear.com/programming/please-stop-staying-java-sucks/"
+   :author "Jason Cohen"
+   :id "BLG128"}
+{:title "The biggest lie in IT - Enterprise"
+   :url "http://service-architecture.blogspot.com/2006/08/biggest-lie-in-it-enterprise.html"
+   :author "Steve Jones"
+   :id "BLG129"}
+{:title "Java SE 6 isn't for the Enterprise its for Slashdot"
+   :url "http://service-architecture.blogspot.com/2006/03/java-se-6-isnt-for-enterprise-its-for.html"
+   :author "Steve Jones"
+   :id "BLG130"}
+{:title "MapReduce explained in 41 words"
+   :url "https://www.chrisstucchio.com/blog/2011/mapreduce_explained.html"
+   :author "Chris Stucchio"
+   :id "BLG131"}]
