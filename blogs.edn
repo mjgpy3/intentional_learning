@@ -525,4 +525,44 @@
 {:title "MapReduce explained in 41 words"
    :url "https://www.chrisstucchio.com/blog/2011/mapreduce_explained.html"
    :author "Chris Stucchio"
-   :id "BLG131"}]
+   :id "BLG131"}
+{:title "Smart Guy Productivity Pitfalls"
+   :url "http://bookofhook.blogspot.com/2013/03/smart-guy-productivity-pitfalls.html"
+   :author "Hook"
+   :id "BLG132"}
+{:title "Thoughts on emulating Spotify’s matrix organization in other companies"
+   :url "http://blog.kevingoldsmith.com/2014/03/14/thoughts-on-emulating-spotifys-matrix-organization-in-other-companies/"
+   :author "Kevin Goldsmith"
+   :id "BLG133"}
+{:title "REST and SOAP: When Should I Use Each (or Both)?"
+   :url "http://www.infoq.com/articles/rest-soap-when-to-use-each"
+   :author "Mike Rozlog"
+   :id "BLG134"}
+{:title "Clojure is not Software Conservative"
+   :url "http://blog.n01se.net/Clojure-is-not-Software-Conservative.html"
+   :author "Chris Houser"
+   :id "BLG135"}
+{:title "Scaling, Deepening and Broadening Agile"
+   :url "http://www.caroli.org/scaling-deepening-broadening-agile/"
+   :author "Paulo Caroli"
+   :id "BLG136"}
+{:title "QuickChecking non-Haskell Code"
+   :url "http://brianmckenna.org/blog/crosscheck"
+   :author "Brian McKenna"
+   :id "BLG137"}
+{:title "QuickChecking non-Haskell Code"
+   :url "http://brianmckenna.org/blog/crosscheck"
+   :author "Brian McKenna"
+   :id "BLG138"}
+{:title "Java Doesn’t Suck – You’re Just Using it Wrong"
+   :url "http://www.jamesward.com/2014/12/03/java-doesnt-suck-youre-just-using-it-wrong"
+   :author "James Ward"
+   :id "BLG139"}
+{:title "Alternatives to boolean parameters"
+   :url "http://blog.8thlight.com/dariusz-pasciak/2015/05/28/alternatives-to-boolean-parameters.html"
+   :author "Dariusz Pasciak"
+   :id "BLG140"}
+{:title "Alternatives to boolean parameters"
+   :url "http://blog.8thlight.com/dariusz-pasciak/2015/05/28/alternatives-to-boolean-parameters.html"
+   :author "Dariusz Pasciak"
+   :id "BLG141"}]
