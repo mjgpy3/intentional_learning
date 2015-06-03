@@ -36,4 +36,13 @@
    :id "YT12"}
 {:title "TAM Q&A - Matt Stone & Trey Parker (2007)"
    :url "https://www.youtube.com/watch?v=hc5eUKif_nQ"
-   :id "YT13"}]
+   :id "YT13"}
+{:title "Making Badass Developers - Kathy Sierra (Serious Pony) keynote"
+   :url "https://www.youtube.com/watch?v=FKTxC9pl-WM"
+   :id "YT14"}
+{:title "FEELING BETTER IS BETTER by Kathy Sierra, Ep 35"
+   :url "https://www.youtube.com/watch?v=Str2K98JnMc"
+   :id "YT15"}
+{:title "Understanding Parallel Computing: Amdahl's Law"
+   :url "https://www.youtube.com/watch?v=WdRiZEwBhsM"
+   :id "YT16"}]
