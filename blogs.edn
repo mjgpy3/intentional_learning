@@ -549,10 +549,6 @@
 {:title "QuickChecking non-Haskell Code"
    :url "http://brianmckenna.org/blog/crosscheck"
    :author "Brian McKenna"
-   :id "BLG137"}
-{:title "QuickChecking non-Haskell Code"
-   :url "http://brianmckenna.org/blog/crosscheck"
-   :author "Brian McKenna"
    :id "BLG138"}
 {:title "Java Doesn’t Suck – You’re Just Using it Wrong"
    :url "http://www.jamesward.com/2014/12/03/java-doesnt-suck-youre-just-using-it-wrong"
@@ -565,4 +561,12 @@
 {:title "Alternatives to boolean parameters"
    :url "http://blog.8thlight.com/dariusz-pasciak/2015/05/28/alternatives-to-boolean-parameters.html"
    :author "Dariusz Pasciak"
-   :id "BLG141"}]
+   :id "BLG141"}
+{:title "Elixir Streams For Lazy Evaluation"
+   :url "http://hashrocket.com/blog/posts/elixir-streams-for-lazy-evaluation"
+   :author "Johnny Winn"
+   :id "BLG142"}
+{:title "Transducers"
+   :url "http://clojure.org/transducers"
+   :author "Rich Hickey"
+   :id "BLG143"}]
