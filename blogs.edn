@@ -569,4 +569,80 @@
 {:title "Transducers"
    :url "http://clojure.org/transducers"
    :author "Rich Hickey"
-   :id "BLG143"}]
+   :id "BLG143"}
+{:title "A Brief, Incomplete, and Mostly Wrong History of Programming Languages"
+   :url "http://james-iry.blogspot.jp/2009/05/brief-incomplete-and-mostly-wrong.html"
+   :author "James Iry"
+   :id "BLG144"}
+{:title "The Best Programming Advice I Ever Got"
+   :url "http://russolsen.com/blog/2012/08/09/the-best-programming-advice-i-ever-got/"
+   :author "Russ Olsen"
+   :id "BLG145"}
+{:title "How to destroy Programmer Productivity"
+   :url "http://georgestocker.com/2014/04/15/how-to-destroy-programmer-productivity/"
+   :author "George Stocker"
+   :id "BLG146"}
+{:title "Continuations Made Simple and Illustrated "
+   :url "https://www.ps.uni-saarland.de/~duchier/python/continuations.html"
+   :author "Denys Duchier"
+   :id "BLG147"}
+{:title "Unix-like shells on Windows"
+   :url "http://www.johndcook.com/blog/2015/06/01/unix-like-shells-on-windows/"
+   :author "John D. Cook"
+   :id "BLG148"}
+{:title "Abstraction, intuition, and the “monad tutorial fallacy”"
+   :url "https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/"
+   :author "Brent Yorgey"
+   :id "BLG149"}
+{:title "Monads: Easy or Hard?"
+   :url "https://byorgey.wordpress.com/2012/07/19/monads-easy-or-hard/"
+   :author "Brent Yorgey"
+   :id "BLG150"}
+{:title "\"The Best Programming Advice I Ever Got\" with Rob Pike"
+   :url "http://www.informit.com/articles/article.aspx?p=1941206"
+   :author "Rob Pike"
+   :id "BLG151"}
+{:title "GHC/Kinds"
+   :url "https://wiki.haskell.org/GHC/Kinds"
+   :author "Haskell Community"
+   :id "BLG152"}
+{:title "You Could Have Invented Monads! (And Maybe You Already Have.)"
+   :url "http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html"
+   :author "Dan Piponi"
+   :id "BLG153"}
+{:title "How to undo (almost) anything with Git"
+   :url "https://github.com/blog/2019-how-to-undo-almost-anything-with-git"
+   :author "Joshua Wehner"
+   :id "BLG154"}
+{:title "Light Table - a new IDE concept"
+   :url "http://www.chris-granger.com/2012/04/12/light-table---a-new-ide-concept/"
+   :author "Chris Granger"
+   :id "BLG155"}
+{:title "5 Things Not To Do During Your Job Search"
+   :url "http://www.glassdoor.com/blog/alienate-job-search/"
+   :author "Jacqui Barrett-Poindexter"
+   :id "BLG156"}
+{:title "4 Reasons To Stop Complaining"
+   :url "http://www.glassdoor.com/blog/4-reasons-stop-complaining/"
+   :author "Vivian Giang"
+   :id "BLG157"}
+{:title "Handling five billion sessions a day – in real time"
+   :url "https://blog.twitter.com/2015/handling-five-billion-sessions-a-day-in-real-time"
+   :author "Ed Solovey"
+   :id "BLG158"}
+{:title "Manifesto for Not Only Object-Oriented Development"
+   :url "https://web.archive.org/web/20130805230525/http://notonlyoo.org/"
+   :author "Simon Cousins"
+   :id "BLG159"}
+{:title "Why bugs don't like F#"
+   :url "https://web.archive.org/web/20130918053426/http://www.simontylercousins.net/journal/2013/3/7/why-bugs-dont-like-f.html"
+   :author "Simon Tyler Cousins"
+   :id "BLG160"}
+{:title "Why use F#?"
+   :url "http://fsharpforfunandprofit.com/why-use-fsharp/"
+   :author "scottw"
+   :id "BLG161"}
+{:title "5 Ways Introverts Make Better Leaders"
+   :url "http://www.glassdoor.com/blog/5-ways-introverts-leaders/"
+   :author "Vivian Giang"
+   :id "BLG162"}]
