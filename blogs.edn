@@ -645,4 +645,84 @@
 {:title "5 Ways Introverts Make Better Leaders"
    :url "http://www.glassdoor.com/blog/5-ways-introverts-leaders/"
    :author "Vivian Giang"
-   :id "BLG162"}]
+   :id "BLG162"}
+{:title "A critique of Abelson and Sussman -or- Why calculating is better than scheming"
+   :url "http://www.cs.kent.ac.uk/people/staff/dat/miranda/wadler87.pdf"
+   :author "Philip Wadler"
+   :id "BLG163"}
+{:title "Dynamic Languages are Static"
+   :url "http://blog.enfranchisedmind.com/2014/08/dynamic-languages-are-static/"
+   :author "Brian Hurt"
+   :id "BLG164"}
+{:title "Random thoughts on Haskell"
+   :url "http://blog.enfranchisedmind.com/2009/01/random-thoughts-on-haskell/"
+   :author "Brian Hurt"
+   :id "BLG165"}
+{:title "The state of the failure condition"
+   :url "http://ayende.com/blog/170977/the-state-of-a-failure-condition"
+   :author "Ayende Rahien"
+   :id "BLG166"}
+{:title "The business process of comparing the price of milk"
+   :url "http://ayende.com/blog/170978/the-business-process-of-comparing-the-price-of-milk"
+   :author "Ayende Rahien"
+   :id "BLG167"}
+{:title "Data, code, and regulation"
+   :url "http://www.johndcook.com/blog/2015/05/28/data-code-and-regulation/"
+   :author "John D. Cook"
+   :id "BLG168"}
+{:title "Top 10 Reasons Your Company Should Contribute to Open Source Projects"
+   :url "http://www.devx.com/opensource/top-10-reasons-your-company-should-contribute-to-open-source-projects.html"
+   :author "Gigi Sayfan"
+   :id "BLG169"}
+{:title "Collaborative Peer Code Review with GitColony"
+   :url "http://www.devx.com/blog/dev_issues/collaborative-peer-code-review-with-gitcolony.html"
+   :author "Sandeep Chanda"
+   :id "BLG170"}
+{:title "An error monad in Clojure"
+   :url "https://brehaut.net/blog/2011/error_monads"
+   :author "Andrew Brehaut"
+   :id "BLG171"}
+{:title "Programmability in the Network: Blue-Green Deployment Pattern"
+   :url "https://devcentral.f5.com/articles/programmability-in-the-network-blue-green-deployment-pattern"
+   :author "Lori MacVittie"
+   :id "BLG172"}
+{:title "FlaccidScrum"
+   :url "http://martinfowler.com/bliki/FlaccidScrum.html"
+   :author "Martin Fowler"
+   :id "BLG173"}
+{:title "Simple Hickey"
+   :url "http://blog.8thlight.com/uncle-bob/2011/10/20/Simple-Hickey.html"
+   :author "Uncle Bob"
+   :id "BLG174"}
+{:title "Reducers"
+   :url "http://clojure.org/reducers"
+   :author "Rich Hickey"
+   :id "BLG175"}
+{:title "How We Moved Our API From Ruby to Go and Saved Our Sanity"
+   :url "http://blog.parse.com/learn/how-we-moved-our-api-from-ruby-to-go-and-saved-our-sanity/"
+   :author "Charity Majors"
+   :id "BLG176"}
+{:title "How Do You Use a Catalog?"
+   :url "http://pragdave.me/blog/2015/06/09/how-do-you-use-a-catalog/"
+   :author "Dave Thomas"
+   :id "BLG177"}
+{:title "Launching missiles with Haskell"
+   :url "http://www.johndcook.com/blog/2015/06/04/launching-missiles-with-haskell/"
+   :author "John D. Cook"
+   :id "BLG178"}
+{:title "Monads are hard because…"
+   :url "http://www.johndcook.com/blog/2014/03/03/monads-are-hard-because/"
+   :author "John D. Cook"
+   :id "BLG179"}
+{:title "Rethinking Design Patterns"
+   :url "http://blog.codinghorror.com/rethinking-design-patterns/"
+   :author "Jeff Atwood"
+   :id "BLG180"}
+{:title "Why “Agile” and especially Scrum are terrible"
+   :url "https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible/"
+   :author "Michael O. Church"
+   :id "BLG181"}
+{:title "Why I won’t run another startup"
+   :url "https://medium.com/@arthurattwell/why-i-won-t-run-another-startup-e5ff64c933d0"
+   :author "Arthur Attwell"
+   :id "BLG182"}]
