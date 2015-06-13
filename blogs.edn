@@ -725,4 +725,16 @@
 {:title "Why I won’t run another startup"
    :url "https://medium.com/@arthurattwell/why-i-won-t-run-another-startup-e5ff64c933d0"
    :author "Arthur Attwell"
-   :id "BLG182"}]
+   :id "BLG182"}
+{:title "It’s The Future"
+   :url "http://blog.circleci.com/its-the-future/"
+   :author "Paul Biggar"
+   :id "BLG183"}
+{:title "Transit"
+   :url "http://blog.cognitect.com/blog/2014/7/22/transit"
+   :author "Rich Hickey"
+   :id "BLG184"}
+{:title "TRANSDUCERS ARE COMING"
+   :url "http://blog.cognitect.com/blog/2014/8/6/transducers-are-coming"
+   :author "Rich Hickey"
+   :id "BLG185"}]
