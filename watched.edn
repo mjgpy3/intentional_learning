@@ -48,4 +48,7 @@
    :id "YT16"}
 {:title "Teaching creative computer science: Simon Peyton Jones at TEDxExeter"
    :url "https://www.youtube.com/watch?v=Ia55clAtdMs"
-   :id "YT17"}]
+   :id "YT17"}
+{:title "Productivity Is Killing Us"
+   :url "http://www.infoq.com/presentations/productivity-flow-silos"
+   :id "YT18"}]
