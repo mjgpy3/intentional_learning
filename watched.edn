@@ -51,4 +51,10 @@
    :id "YT17"}
 {:title "Productivity Is Killing Us"
    :url "http://www.infoq.com/presentations/productivity-flow-silos"
-   :id "YT18"}]
+   :id "YT18"}
+{:title "Idris: General Purpose Programming with Dependent Types"
+   :url "https://www.youtube.com/watch?v=vkIlW797JN8"
+   :id "YT19"}
+{:title "Experimentation Mindset"
+   :url "http://www.infoq.com/presentations/experimentation-mindset"
+   :id "YT20"}]
