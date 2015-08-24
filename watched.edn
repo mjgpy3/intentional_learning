@@ -60,4 +60,13 @@
    :id "YT20"}
 {:title "\"Elixir and the Internet of Things\" by Doug Rohrer"
    :url "https://www.youtube.com/watch?v=a-OCorBXX7M"
-   :id "YT21"}]
+   :id "YT21"}
+{:title "A monad is not a burrito"
+   :url "https://www.youtube.com/watch?v=46Z7Hq4fhN0"
+   :id "YT22"}
+{:title "Clojure Made Simple"
+   :url "https://www.youtube.com/watch?v=VSdnJDO-xdg"
+   :id "YT23"}
+{:title "Scala, Erlang, F# Creators Discuss Functional Languages"
+   :url "http://www.infoq.com/interviews/functional-langs"
+   :id "YT24"}]
