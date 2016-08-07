@@ -4,6 +4,7 @@ const R = require('ramda'),
 // TODO: Async factor (how many pages to get at once)
 // TODO: Better error results for validate
 // TODO: Assert keyset is correct (like Hapi does)
+// TODO: Try to use count and per-page to get all at the same time
 
 const strategy = {
   name: 'getAllPages',
