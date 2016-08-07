@@ -7,5 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Michael Gilliland <mjg.py3@gmail.com> (https://twitter.com/mjgpy3)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.22.0",
+    "request": "^2.74.0",
+    "request-promise": "^4.1.0"
+  }
 }
