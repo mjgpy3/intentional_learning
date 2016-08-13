@@ -6,7 +6,7 @@
 module EbnfParser =
   open FParsec
 
-  type Ebnf = 
+  type Ebnf =
     | Identifier of string
     | Definition of Ebnf*Ebnf
     | Concatination of Ebnf*Ebnf
@@ -14,6 +14,7 @@ module EbnfParser =
     | Repetition of Ebnf
     | Grouping of Ebnf
     | Optional of Ebnf
+    | Terminal of string
 
   type Rule = Ebnf*Ebnf
   type Grammar = Rule list
@@ -28,13 +29,14 @@ module EbnfParser =
     letter .>>. manyChars (letter <|> digit <|> pchar '_') |>> (Identifier << prependChar)
 
   let terminal =
-    between (pchar '\'') (pchar '\'') (many1Chars character) <|>
-    between (pchar  '"') (pchar  '"') (manyChars character)
+        (between (pchar '\'') (pchar '\'') (many1Chars character))
+    <|> (between (pchar  '"') (pchar  '"') (many1Chars character)) |>> Terminal
 
   let lhs = identifier
 
   let rec rhs : Parser<Ebnf, unit> = parse.Delay(fun () ->
         identifier
+    <|> terminal
     <|> (pchar '[' >>. rhs .>> pchar ']' |>> Optional)
     <|> (pchar '{' >>. rhs .>> pchar '}' |>> Repetition)
     <|> (pchar '(' >>. rhs .>> pchar ')' |>> Grouping)
