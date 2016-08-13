@@ -21,7 +21,7 @@ module EbnfParser =
 
   let prependChar (c, text) = c.ToString() + text
 
-  let symbol : Parser<char, unit> = anyOf ['['; ']'; '{'; '}'; '('; ')'; '<'; '>'; '\''; '"'; '='; '|'; '.'; ','; ';']
+  let symbol : Parser<char, unit> = anyOf ['['; ']'; '{'; '}'; '('; ')'; '<'; '>'; '\''; '"'; '='; '|'; '.'; ','; ';'; '-']
 
   let character = letter <|> digit <|> symbol <|> pchar '_'
 
@@ -46,4 +46,8 @@ module EbnfParser =
 
   let rule : Parser<Rule, unit> = lhs .>> pchar '=' .>>. rhs .>> pchar ';'
 
-  let grammar : Parser<Grammar, unit> = many rule
+  let grammar : Parser<Grammar, unit> = sepEndBy rule (pchar ';')
+
+  let r1 = run grammar "integer=\"0\"|[\"-\"],natural_number;"
+
+  printfn "%A" r1
